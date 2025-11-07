@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 186be612f5ad743c9a3e4cc9a1c330f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Other
+    Behaviors/ProjectileRaycastHitDetector.cs
+  uploadId: 815222

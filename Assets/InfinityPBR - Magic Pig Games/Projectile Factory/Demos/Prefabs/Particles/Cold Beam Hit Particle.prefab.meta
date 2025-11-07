@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c3663f014b3248c6b9596f3b0cd9242
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Prefabs/Particles/Cold
+    Beam Hit Particle.prefab
+  uploadId: 815222

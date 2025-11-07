@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f60b9da902994477980049119da1fba2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Trajectory
+    Behavior/Active Target Overlay.asset
+  uploadId: 815222

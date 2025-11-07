@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: f32e5ec77370408b8383283830d42c61
+timeCreated: 1710299205
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Observers/CameraShakeOnProjectileLifecycle.cs
+  uploadId: 815222

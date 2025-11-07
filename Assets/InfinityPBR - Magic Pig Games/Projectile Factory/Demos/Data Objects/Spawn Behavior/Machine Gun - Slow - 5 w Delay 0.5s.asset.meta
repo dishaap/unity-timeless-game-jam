@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 01d6dc924de9e493291430453934a63a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Spawn
+    Behavior/Machine Gun - Slow - 5 w Delay 0.5s.asset
+  uploadId: 815222

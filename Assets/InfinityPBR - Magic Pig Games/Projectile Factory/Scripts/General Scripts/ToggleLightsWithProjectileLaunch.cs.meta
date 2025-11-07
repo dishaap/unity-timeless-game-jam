@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 584343bd23ae4bb7ac09a0ce63a44bed
+timeCreated: 1710028729
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/General
+    Scripts/ToggleLightsWithProjectileLaunch.cs
+  uploadId: 815222

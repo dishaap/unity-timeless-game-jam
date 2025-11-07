@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6d85e75428ba8bb47a38506249940dea
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 205515
+  packageName: Top-Down WASD Character Controller - ARPG / RPG / MMORPG / RPG Builder
+  packageVersion: 1.0.3
+  assetPath: Assets/Blink/Controllers/TopDownWASD/Scripts/Controller/TopDownWASDController.cs
+  uploadId: 512331

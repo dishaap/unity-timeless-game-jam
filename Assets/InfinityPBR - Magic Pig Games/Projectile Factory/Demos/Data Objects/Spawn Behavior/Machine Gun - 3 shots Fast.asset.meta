@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4ce9dd9d6c3614e40bfbd630684b53a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Spawn
+    Behavior/Machine Gun - 3 shots Fast.asset
+  uploadId: 815222

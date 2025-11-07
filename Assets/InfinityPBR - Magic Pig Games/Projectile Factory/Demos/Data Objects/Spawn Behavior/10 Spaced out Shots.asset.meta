@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3b2ff8ed13640422ca333c5cced93bf6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Spawn
+    Behavior/10 Spaced out Shots.asset
+  uploadId: 815222

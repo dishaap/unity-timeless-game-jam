@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 11c2bcff677a54755948c16f71976c96
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Prefabs/Demo
+    Player.prefab
+  uploadId: 815222

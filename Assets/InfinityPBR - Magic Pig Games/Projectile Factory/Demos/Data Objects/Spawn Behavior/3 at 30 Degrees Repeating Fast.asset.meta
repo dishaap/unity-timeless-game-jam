@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0e0a51c97e4724ba6b7ce9b66b959991
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Spawn
+    Behavior/3 at 30 Degrees Repeating Fast.asset
+  uploadId: 815222

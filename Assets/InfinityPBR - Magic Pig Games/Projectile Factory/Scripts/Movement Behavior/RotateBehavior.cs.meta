@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: cb25ec1bac4143e2a83a3ab41cbf2814
+timeCreated: 1710201707
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Movement
+    Behavior/RotateBehavior.cs
+  uploadId: 815222

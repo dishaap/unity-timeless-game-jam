@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: ca0888dae30c4fa3bb4cf02af949a554
+timeCreated: 1701644209
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Trajectory
+    Behavior/TrajectoryTargetOverlay.cs
+  uploadId: 815222

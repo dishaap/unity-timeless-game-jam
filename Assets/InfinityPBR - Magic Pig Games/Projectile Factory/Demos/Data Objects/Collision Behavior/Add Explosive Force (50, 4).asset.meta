@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7bc3882c0861f42ba8fca53968208dce
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Collision
+    Behavior/Add Explosive Force (50, 4).asset
+  uploadId: 815222

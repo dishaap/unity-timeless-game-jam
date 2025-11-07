@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 18fb81dd1fc54ee99eb5328b18014c98
+timeCreated: 1706245200
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Spawn
+    Behavior/ToggleSpawnBehavior.cs
+  uploadId: 815222

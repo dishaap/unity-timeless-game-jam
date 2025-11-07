@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 264de42fdac9a45eb8f4ea8e6794d8d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/General
+    Scripts/TriggerMovementOnSpawnPointChange.cs
+  uploadId: 815222

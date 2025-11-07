@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 2ab6d01887cc40bba76ce35fe720fbde
+timeCreated: 1709517993
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Audio
+    Behavior/ProjectileAudioBehavior.cs
+  uploadId: 815222

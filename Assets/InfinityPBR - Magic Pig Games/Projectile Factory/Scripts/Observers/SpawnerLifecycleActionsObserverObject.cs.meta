@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 3fe1d989bf0a49de8d300afd7dac80b8
+timeCreated: 1713138601
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Observers/SpawnerLifecycleActionsObserverObject.cs
+  uploadId: 815222
