@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8948c1f5116c7f2479001ee0a413fd7b
+guid: 298e5d8daf2346e47855e78e1b794f1d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,16 +107,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 65518
-  packageName: RealToon (Pro Anime/Toon Shader)
-  packageVersion: 5.0.14
-  assetPath: Assets/RealToon/Editor/RT_GUI_Img.png
-  uploadId: 812280
