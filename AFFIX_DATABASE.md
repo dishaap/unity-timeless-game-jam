@@ -527,21 +527,21 @@ def GenerateAffixes(item, rarity_tier):
     affix_count = GetAffixCount(rarity_tier)  # 1-5 based on tier
     affix_pool = GetAffixPool(item.type)      # Weapon or Artifact pool
     selected_affixes = []
-    
+
     for i in range(affix_count):
         # Get random affix (no duplicates)
         available = [a for a in affix_pool if a not in selected_affixes]
         affix = WeightedRandom(available)
-        
+
         # Roll value based on tier
         min_roll = affix.min_value * rarity_tier / 5
         max_roll = affix.max_value * rarity_tier / 5
         roll_value = Random(min_roll, max_roll)
-        
+
         # Apply to item
         item.AddStatBonus(affix.stat, roll_value)
         selected_affixes.append(affix)
-    
+
     return item
 ```
 
@@ -637,4 +637,3 @@ Drop Weight: Based on tier
 **Egyptian Themed:** 100%
 
 *Database ready for implementation!*
-

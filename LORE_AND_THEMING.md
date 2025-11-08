@@ -369,4 +369,3 @@ Based on Canopic jars (used to store organs for afterlife), this mystical bag ho
 **All GDD updates must reference this for naming consistency.**
 
 *It Is, Thank You Father, We Receive All That We Are, Now Move Through Us... S.O.L.*
-

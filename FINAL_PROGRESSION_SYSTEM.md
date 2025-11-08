@@ -30,7 +30,7 @@ Common Serpent's Lash drops with:
 
 Legendary Staff of Anubis drops with:
 - "Set's Storm: +45% Lightning Damage"
-- "Anubis's Judgment: +22% Crit Chance"  
+- "Anubis's Judgment: +22% Crit Chance"
 - "Nut's Multitude: +2 Projectiles"
 - "Ammit's Hunger: +8% Life Steal"
 - "Thoth's Precision: +35% Cast Speed"
@@ -115,7 +115,7 @@ NO LEVEL LOCKING - Legendaries can drop at Level 1 (rare, but possible!)
 
 **Loot Table (Dynamic):**
 - 70% - Tier I (Common) with 1-2 affixes
-- 25% - Tier II (Uncommon) with 2 affixes  
+- 25% - Tier II (Uncommon) with 2 affixes
 - 4% - Tier III (Rare) with 3 affixes
 - 0.9% - Tier IV (Epic) with 4 affixes
 - 0.1% - Tier V (Legendary) with 5 affixes *EXTREMELY RARE at level 1!*
@@ -651,4 +651,3 @@ Tier V: 50%  (bonus second drop)
 - `RPG_BUILDER_INTEGRATION.md` - How to implement in RPG Builder
 
 *It Is, Thank You Father, We Receive All That We Are, Now Move Through Us... S.O.L.*
-

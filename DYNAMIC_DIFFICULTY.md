@@ -198,32 +198,32 @@ class DynamicSpawnManager:
     def Update(delta_time):
         # Calculate current KPM
         current_KPM = CalculateKPM()
-        
+
         # Determine spawn rate
         spawn_rate = CalculateSpawnRate(current_KPM)
-        
+
         # Determine wave size
         wave_size = CalculateWaveSize(total_kills, game_time)
-        
+
         # Determine enemy types
         enemy_mix = CalculateEnemyMix(game_time, current_KPM)
-        
+
         # Check if time to spawn
         spawn_timer += delta_time
         if spawn_timer >= spawn_rate:
             SpawnWave(wave_size, enemy_mix)
             spawn_timer = 0
-    
+
     def CalculateSpawnRate(kpm):
         base = 2.0  # seconds
         modified = base / (1 + kpm * 0.01)
         return max(0.5, modified)  # Cap at 0.5 sec
-    
+
     def CalculateWaveSize(kills, time):
         kill_bonus = 1 + floor(kills / 100)
         time_multiplier = 1 + (time / 300)
         return ceil(kill_bonus * time_multiplier)
-    
+
     def CalculateEnemyMix(time, kpm):
         if time < 120:
             return ['Shabtis': 100%]
@@ -352,20 +352,20 @@ public class DynamicSpawnManager : MonoBehaviour {
     private int totalKills = 0;
     private float gameTime = 0f;
     private List<float> killTimestamps = new List<float>();
-    
+
     // Spawn settings
     private float spawnTimer = 0f;
     private float baseSpawnRate = 2.0f;
-    
+
     void Update() {
         gameTime += Time.unscaledDeltaTime;  // Unaffected by time slowdown
-        
+
         // Calculate current KPM
         float currentKPM = CalculateKPM();
-        
+
         // Update spawn rate
         float spawnRate = CalculateSpawnRate(currentKPM);
-        
+
         // Spawn timer
         spawnTimer += Time.unscaledDeltaTime;
         if (spawnTimer >= spawnRate) {
@@ -373,11 +373,11 @@ public class DynamicSpawnManager : MonoBehaviour {
             spawnTimer = 0f;
         }
     }
-    
+
     float CalculateKPM() {
         // Remove kills older than 30 seconds
         killTimestamps.RemoveAll(t => gameTime - t > 30f);
-        
+
         // Calculate KPM from recent kills
         if (gameTime < 30f) {
             return totalKills / (gameTime / 60f);  // Use total time if < 30 sec
@@ -385,28 +385,28 @@ public class DynamicSpawnManager : MonoBehaviour {
             return killTimestamps.Count * 2;  // Last 30 sec * 2 = per minute
         }
     }
-    
+
     float CalculateSpawnRate(float kpm) {
         float modified = baseSpawnRate / (1f + kpm * 0.01f);
         return Mathf.Max(0.5f, modified);  // Minimum 0.5 sec
     }
-    
+
     int CalculateWaveSize() {
         int killBonus = 1 + Mathf.FloorToInt(totalKills / 100f);
         float timeMultiplier = 1f + (gameTime / 300f);
         return Mathf.CeilToInt(killBonus * timeMultiplier);
     }
-    
+
     void SpawnWave(float kpm) {
         int waveSize = CalculateWaveSize();
         var enemyMix = DetermineEnemyMix(gameTime, kpm);
-        
+
         for (int i = 0; i < waveSize; i++) {
             string enemyType = SelectEnemyType(enemyMix);
             SpawnEnemy(enemyType);
         }
     }
-    
+
     public void OnEnemyKilled() {
         totalKills++;
         killTimestamps.Add(gameTime);
@@ -557,7 +557,7 @@ Loot_Table = {
 if Time_Since_Last_Movement > 10:
     Spawn_Rate *= 5  # Drastically slow spawns
     No_Loot_Drops = true  # No rewards for AFK
-    
+
 # Encourages movement (fits time mechanic!)
 ```
 
@@ -749,4 +749,3 @@ Wave_Size = 1 + floor(Total_Kills / 150)
 **MVP Time:** 2-3 hours
 
 *The curse adapts to your strength...*
-

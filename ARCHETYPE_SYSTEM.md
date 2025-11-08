@@ -266,12 +266,12 @@
 def GenerateLevelUpChoices(player_level):
     # Track player's current archetype inclinations
     archetype_weights = GetPlayerArchetypeWeights()
-    
+
     # Generate 3 random upgrades from different archetypes
     choice_1 = SelectUpgrade(archetype_weights, exclude=[])
     choice_2 = SelectUpgrade(archetype_weights, exclude=[choice_1.archetype])
     choice_3 = SelectUpgrade(archetype_weights, exclude=[choice_1.archetype, choice_2.archetype])
-    
+
     return [choice_1, choice_2, choice_3]
 ```
 
@@ -280,7 +280,7 @@ def GenerateLevelUpChoices(player_level):
 def GetPlayerArchetypeWeights():
     # Slightly favor archetypes player has chosen before (20% bonus)
     # But always keep other paths viable
-    
+
     weights = {
         'warrior': 1.0 + (warrior_picks * 0.2),
         'mage': 1.0 + (mage_picks * 0.2),
@@ -427,7 +427,7 @@ def GetPlayerArchetypeWeights():
 RPG Builder > Progression > Talent Trees
 
 Create Tree: "Divine Paths"
-  
+
 Branch 1: Path of Anubis
   - Node 1: Anubis's Fortitude (+10% HP)
   - Node 2: Guardian's Stance (+5% DR)
@@ -449,10 +449,10 @@ void OnPlayerLevelUp() {
     var choice1 = GetRandomUpgrade(archetypePool, exclude: null);
     var choice2 = GetRandomUpgrade(archetypePool, exclude: choice1.archetype);
     var choice3 = GetRandomUpgrade(archetypePool, exclude: [choice1.archetype, choice2.archetype]);
-    
+
     // Show UI
     ShowLevelUpChoiceUI(choice1, choice2, choice3);
-    
+
     // Player selects one
     // Apply talent point to that node in RPG Builder
     RPGBuilderManager.Instance.ApplyTalentPoint(selectedUpgrade);
@@ -544,4 +544,3 @@ Level 15 → "Avatar of Anubis" → Full tank god mode!
 **Egyptian Themed:** 100%
 
 *The gods await your choice...*
-

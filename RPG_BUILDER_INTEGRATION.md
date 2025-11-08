@@ -50,7 +50,7 @@ Create all stats:
 RPG Builder > Items > Weapons > Create Item
 
 For each weapon:
-- Base Item: "Serpent's Lash" 
+- Base Item: "Serpent's Lash"
 - Item Type: Weapon
 - Weapon Type: Whip
 - Base Damage: 10
@@ -63,18 +63,18 @@ For each weapon:
 public RPGItem GenerateAffixedWeapon(string weaponType, int rarityTier) {
     // Get base weapon from RPG Builder
     var baseWeapon = RPGBuilderDatabase.Instance.GetWeapon(weaponType);
-    
+
     // Clone it
     var newWeapon = Instantiate(baseWeapon);
-    
+
     // Roll affixes
     int affixCount = rarityTier;  // 1-5 based on tier
     var affixPool = GetAffixPool("weapon");
-    
+
     for (int i = 0; i < affixCount; i++) {
         var affix = GetRandomAffix(affixPool, excludeDuplicates: true);
         float rollValue = RollAffixValue(affix, rarityTier);
-        
+
         // Use RPG Builder native stat bonus
         newWeapon.statBonuses.Add(new RPGStat.StatBonus {
             statID = affix.statID,
@@ -82,7 +82,7 @@ public RPGItem GenerateAffixedWeapon(string weaponType, int rarityTier) {
             isPercent = affix.isPercent
         });
     }
-    
+
     return newWeapon;
 }
 ```
@@ -157,10 +157,10 @@ Configure:
 void OnTriggerEnter(Collider other) {
     if (other.CompareTag("Loot")) {
         var item = other.GetComponent<LootItem>();
-        
+
         // RPG Builder native auto-pickup
         InventoryManager.Instance.AddItem(item.itemID, item.quantity);
-        
+
         // Visual/audio feedback
         PlayPickupEffect();
         Destroy(other.gameObject);
@@ -186,7 +186,7 @@ Auto-unlock: Disabled (we choose randomly)
 
 Branch 1: Path of Anubis
   └─ 20 nodes (all upgrades)
-  
+
 Branch 2: Path of Thoth
   └─ 20 nodes (all upgrades)
 
@@ -209,16 +209,16 @@ Branch 6: Path of Apophis
 public void OnPlayerLevelUp() {
     // Generate 3 random choices from different paths
     var choices = GenerateRandomChoices(3);
-    
+
     // Show custom UI (non-intrusive)
     ShowChoiceUI(choices);
-    
+
     // Wait for player input (pauses game)
     var selectedChoice = WaitForPlayerChoice();
-    
+
     // Apply using RPG Builder native talent system
     TalentTreeManager.Instance.UnlockTalent(selectedChoice.talentID);
-    
+
     // Resume game
 }
 ```
@@ -279,12 +279,12 @@ Configure:
 // Custom script to manage 3 active weapons
 public class MultiWeaponController : MonoBehaviour {
     public List<RPGWeapon> activeWeapons;  // Max 3
-    
+
     void Update() {
         foreach (var weapon in activeWeapons) {
             // Find nearest enemy in weapon's range
             var target = FindNearestEnemy(weapon.range);
-            
+
             if (target != null && weapon.IsReady()) {
                 // Use RPG Builder native attack
                 CombatManager.Instance.AttackTarget(target, weapon);
@@ -354,20 +354,20 @@ public class DynamicSpawnManager : MonoBehaviour {
         float kpm = CalculateKPM();
         float spawnRate = CalculateSpawnRate(kpm);
         int waveSize = CalculateWaveSize();
-        
+
         // Use RPG Builder's spawn points
         if (Time.time >= nextSpawnTime) {
             for (int i = 0; i < waveSize; i++) {
                 var spawnPoint = SelectRandomSpawnPoint();
                 var enemyType = SelectEnemyType(gameTime, kpm);
-                
+
                 // RPG Builder native spawn
                 SpawnManager.Instance.SpawnNPC(
                     npcID: enemyType,
                     spawnPoint: spawnPoint.position
                 );
             }
-            
+
             nextSpawnTime = Time.time + spawnRate;
         }
     }
@@ -469,7 +469,7 @@ Loot_Table_Emperor (Boss):
 void OnLootTableRoll(RPGItem baseItem, int rarityTier) {
     // Generate affixes
     var affixedItem = ApplyRandomAffixes(baseItem, rarityTier);
-    
+
     // Spawn using RPG Builder native
     LootManager.Instance.SpawnLootItem(affixedItem, position);
 }
@@ -548,7 +548,7 @@ public class PlayerCombat : MonoBehaviour {
     public RPGWeapon weapon1;
     public RPGWeapon weapon2;
     public RPGWeapon weapon3;
-    
+
     void Update() {
         // Each weapon attacks independently
         if (weapon1 != null && weapon1.CanAttack()) {
@@ -576,11 +576,11 @@ public class PlayerCombat : MonoBehaviour {
 ```csharp
 public class TimeManager : MonoBehaviour {
     private Rigidbody playerRB;
-    
+
     void Update() {
         // Check player velocity
         float velocity = playerRB.velocity.magnitude;
-        
+
         if (velocity < 0.1f) {
             // Player stopped - slow time
             Time.timeScale = 0.1f;
@@ -588,7 +588,7 @@ public class TimeManager : MonoBehaviour {
             // Player moving - normal time
             Time.timeScale = 1.0f;
         }
-        
+
         // Note: RPG Builder respects Time.timeScale automatically!
         // No special integration needed
     }
@@ -618,12 +618,12 @@ Quest: "Survive the Curse"
 ```csharp
 public class GlobalTimer : MonoBehaviour {
     private float remainingTime = 300f;  // 5 minutes
-    
+
     void Update() {
         remainingTime -= Time.unscaledDeltaTime;  // Unaffected by time scale
-        
+
         UpdateTimerUI(remainingTime);
-        
+
         if (remainingTime <= 0f) {
             OnTimerEnd();  // Spawn boss
         }
@@ -674,7 +674,7 @@ Create 3 ultimates:
 void OnGameStart() {
     ShowUltimateSelectionUI();
     var chosenUltimate = WaitForPlayerChoice();
-    
+
     // Assign using RPG Builder
     AbilityManager.Instance.LearnAbility(chosenUltimate.abilityID);
 }
@@ -836,4 +836,3 @@ ProgressionManager.Instance.AddExperience(xpAmount);
 **Confidence:** 95%
 
 *RPG Builder handles the heavy lifting, we add the magic!*
-

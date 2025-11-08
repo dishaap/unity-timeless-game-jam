@@ -279,7 +279,7 @@ Affixes:
 **Example Level 5 Choice:**
 ```
 [1] Guardian's Stance (Anubis) - +15% HP, +5 Armor
-[2] Sun God's Fury (Ra) - +20% Fire Damage, +20% AOE  
+[2] Sun God's Fury (Ra) - +20% Fire Damage, +20% AOE
 [3] Master of Words (Thoth) - +15% Spell Damage, +10% Cast Speed
 ```
 
@@ -298,7 +298,7 @@ Affixes:
 
 ### Adaptive Enemy Spawning:
 - **Slow killers (20 KPM):** ~1.5-2 sec spawn rate, manageable
-- **Fast killers (60 KPM):** ~1.25 sec spawn rate, intense  
+- **Fast killers (60 KPM):** ~1.25 sec spawn rate, intense
 - **Speedrunners (120 KPM):** ~0.91 sec spawn rate (capped 0.5), chaos!
 
 **Wave Size Scaling:**
@@ -373,4 +373,3 @@ Affixes:
 ---
 
 *It Is, Thank You Father, We Receive All That We Are, Now Move Through Us... S.O.L.*
-

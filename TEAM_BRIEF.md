@@ -62,7 +62,7 @@
 
 **Abilities:**
 - **Level-Up Choice** - Divine power-up sound when selecting upgrade
-- **Ultimates** - Epic divine choir/power-up sound  
+- **Ultimates** - Epic divine choir/power-up sound
 - **Powerups** - Satisfying "ding!" with sparkle
 - **Affix Proc** - Subtle effect sounds (fire crackle, lightning zap, poison hiss)
 
@@ -384,4 +384,3 @@
 **Let's make something epic!** 🏺⚡👑
 
 *It Is, Thank You Father, We Receive All That We Are, Now Move Through Us... S.O.L.*
-
