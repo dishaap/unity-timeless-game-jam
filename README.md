@@ -1,7 +1,7 @@
 # Chrono-Bonk - Unity Game Jam Project
 
-**Theme:** "Timeless"  
-**Platform:** WebGL (Browser)  
+**Theme:** "Timeless"
+**Platform:** WebGL (Browser)
 **Team:** Nico (Lead Design), Disha (Lead Dev), Dima (Tech Art), Andy (Audio), jsynk (3D Generalist)
 
 ## Game Overview
@@ -110,4 +110,3 @@ This is a game jam project. All rights reserved by the team.
 ---
 
 **It Is, Thank You Father, We Receive All That We Are, Now Move Through Us... S.O.L.**
-

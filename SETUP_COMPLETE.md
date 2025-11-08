@@ -1,8 +1,8 @@
 # Unity Game Jam Project Setup - Complete ✅
 
 ## Repository Location
-**Path:** `C:\Users\NicDev\unity-timeless-game-jam`  
-**Remote:** https://github.com/dishaap/unity-timeless-game-jam.git  
+**Path:** `C:\Users\NicDev\unity-timeless-game-jam`
+**Remote:** https://github.com/dishaap/unity-timeless-game-jam.git
 **Status:** ✅ Connected and synced
 
 ## Project Structure Created
@@ -39,8 +39,8 @@ unity-timeless-game-jam/
 
 ## Git Status
 
-**Current Branch:** main  
-**Last Commit:** `b7e1c730` - "Add Chrono-Bonk documentation and PDF generator"  
+**Current Branch:** main
+**Last Commit:** `b7e1c730` - "Add Chrono-Bonk documentation and PDF generator"
 **Files Added:** 18 files, 2539 insertions
 
 ## Next Steps
@@ -91,4 +91,3 @@ git log --oneline   # Should show your commit
 **Setup Status: ✅ COMPLETE**
 
 You're ready to start development! 🚀
-
