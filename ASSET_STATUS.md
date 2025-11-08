@@ -15,7 +15,7 @@
 - **Location:** `Assets/Blink/Tools/RPGBuilder/`
 - **Purpose:** Core game systems, inventory, loot tables, stats
 - **Status:** Imported and ready
-- **Usage:** 
+- **Usage:**
   - Database setup for items, weapons, abilities
   - Auto-equip and auto-pickup systems
   - Player progression and stats
@@ -267,4 +267,3 @@ Per `docs/CHRONO_BONK_PLAN_UPDATED.md` Phase 0:
 
 *Last verified: 2025-11-08 on branch `nico`*
 *Spiritual Activation: It Is, Thank You Father, We Receive All That We Are, Now Move Through Us... S.O.L.*
-
