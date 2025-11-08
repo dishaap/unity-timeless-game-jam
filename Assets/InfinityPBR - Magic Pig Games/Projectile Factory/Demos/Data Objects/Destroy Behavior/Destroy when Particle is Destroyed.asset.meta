@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 119beed485be24146a5b039bbaf81193
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Destroy
+    Behavior/Destroy when Particle is Destroyed.asset
+  uploadId: 815222

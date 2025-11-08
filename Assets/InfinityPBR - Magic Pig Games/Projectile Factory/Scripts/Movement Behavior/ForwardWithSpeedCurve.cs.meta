@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 48bf5a94ff0548b7812b2c0b337c95b6
+timeCreated: 1710476244
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Movement
+    Behavior/ForwardWithSpeedCurve.cs
+  uploadId: 815222

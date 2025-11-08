@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 46c9d49d4de441e0a4cbef0d72dbd55d
+timeCreated: 1710208496
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/IHandleRaycasts/LineRendererLength.cs
+  uploadId: 815222

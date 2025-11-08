@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a54c8eb5b26084bc7911eee34fd9922c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Movement
+    Behavior/Home in on Target  Delay 0.6.asset
+  uploadId: 815222

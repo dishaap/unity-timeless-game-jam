@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 57b2e73f0e0d94bf2aa790dc29867691
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Destroy
+    Behavior/Destroy on Spawner Stop copy.asset
+  uploadId: 815222

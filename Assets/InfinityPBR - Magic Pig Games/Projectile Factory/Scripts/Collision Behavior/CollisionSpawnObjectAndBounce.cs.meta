@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b11b99416b4f4a1780cd5d676e5850c5
+timeCreated: 1701582359
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Collision
+    Behavior/CollisionSpawnObjectAndBounce.cs
+  uploadId: 815222

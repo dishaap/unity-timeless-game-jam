@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 2a8b8e86664848e6bfcce795e4b6b59e
+timeCreated: 1701578306
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Destroy
+    Behavior/DestroyOnTriggerOrCollision.cs
+  uploadId: 815222

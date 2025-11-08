@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 94ddbea3a1ad7466c9206010bf9e5bc3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Movement
+    Behavior/Circles Above Spawner 10m 20m radius.asset
+  uploadId: 815222

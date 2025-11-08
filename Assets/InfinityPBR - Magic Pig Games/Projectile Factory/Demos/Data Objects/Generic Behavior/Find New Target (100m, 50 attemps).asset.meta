@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6624c6e373f464049aa9ea5bbbf4cd7a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/Data Objects/Generic
+    Behavior/Find New Target (100m, 50 attemps).asset
+  uploadId: 815222

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3a63195f3f3b949f4aa014e23f603ecf
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Demos/_Projectiles/Lobbed
+    Missile.prefab
+  uploadId: 815222

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 30cd9551d110a274ba72ac29561e75ec
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 205515
+  packageName: Top-Down WASD Character Controller - ARPG / RPG / MMORPG / RPG Builder
+  packageVersion: 1.0.3
+  assetPath: Assets/Blink/Controllers/TopDownWASD/DEMO_WASD/DEMO_WASD.unity
+  uploadId: 512331

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: c84617489cc54e9a952197fd91362e09
+timeCreated: 1709415062
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Projectile Factory/Scripts/Spawn
+    Behavior Modifications/PhysicsVelocityModified.cs
+  uploadId: 815222

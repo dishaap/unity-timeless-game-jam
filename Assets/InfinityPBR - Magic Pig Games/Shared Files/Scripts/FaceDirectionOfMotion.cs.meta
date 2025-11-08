@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f7eb96e6f86f24177abbde7f8a7ffcfb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281692
+  packageName: Projectile Factory - Behavior Based Projectile System
+  packageVersion: 1.0.28
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Shared Files/Scripts/FaceDirectionOfMotion.cs
+  uploadId: 815222
