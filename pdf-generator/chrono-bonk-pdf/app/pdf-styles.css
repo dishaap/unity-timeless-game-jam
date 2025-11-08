@@ -1,0 +1,181 @@
+/* PDF-specific styles for better print/export quality */
+
+.pdf-content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.8;
+  color: #1a1a1a;
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 1in;
+  background: white;
+}
+
+.pdf-content h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #000;
+  border-bottom: 3px solid #333;
+  padding-bottom: 0.3em;
+  page-break-after: avoid;
+}
+
+.pdf-content h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  color: #1a1a1a;
+  page-break-after: avoid;
+}
+
+.pdf-content h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color: #2a2a2a;
+  page-break-after: avoid;
+}
+
+.pdf-content h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+  color: #2a2a2a;
+}
+
+.pdf-content p {
+  margin-bottom: 1em;
+  text-align: justify;
+  orphans: 3;
+  widows: 3;
+}
+
+.pdf-content ul,
+.pdf-content ol {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding-left: 1em;
+}
+
+.pdf-content li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+.pdf-content strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.pdf-content em {
+  font-style: italic;
+}
+
+.pdf-content code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.pdf-content pre {
+  background-color: #f5f5f5;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+  page-break-inside: avoid;
+}
+
+.pdf-content blockquote {
+  border-left: 4px solid #4a90e2;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.pdf-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  page-break-inside: avoid;
+}
+
+.pdf-content th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.pdf-content td {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+}
+
+.pdf-content hr {
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 2em 0;
+}
+
+.pdf-content a {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+/* Print-specific adjustments */
+@media print {
+  .pdf-content {
+    padding: 0.5in;
+  }
+
+  .pdf-content h1 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  .pdf-content h2,
+  .pdf-content h3 {
+    page-break-after: avoid;
+  }
+
+  .pdf-content p,
+  .pdf-content li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .pdf-content table {
+    page-break-inside: avoid;
+  }
+
+  .pdf-content img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+}
+
+/* Google Docs compatibility */
+.pdf-content {
+  /* Use standard fonts that Google Docs recognizes */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure proper spacing for document structure */
+.pdf-content > *:first-child {
+  margin-top: 0;
+}
+
+.pdf-content > *:last-child {
+  margin-bottom: 0;
+}
