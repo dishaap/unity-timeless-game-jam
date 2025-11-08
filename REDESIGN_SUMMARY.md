@@ -376,7 +376,7 @@ We've completely redesigned the game systems with full Egyptian theming:
 
 **READ THESE:**
 1. REDESIGN_SUMMARY.md - Quick overview
-2. LORE_AND_THEMING.md - Naming guide  
+2. LORE_AND_THEMING.md - Naming guide
 3. GDD_CHRONO_BONK_V2.md - Complete redesign
 
 All weapon/item/enemy names now Egyptian-themed!

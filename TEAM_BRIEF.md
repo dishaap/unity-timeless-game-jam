@@ -61,9 +61,10 @@
 - **Shovel** - Heavy metal "clang"
 
 **Abilities:**
-- **Spell Cubes** - Magical chimes (3 types)
-- **Ultimates** - Epic divine choir/power-up sound
+- **Level-Up Choice** - Divine power-up sound when selecting upgrade
+- **Ultimates** - Epic divine choir/power-up sound  
 - **Powerups** - Satisfying "ding!" with sparkle
+- **Affix Proc** - Subtle effect sounds (fire crackle, lightning zap, poison hiss)
 
 **Enemies:**
 - **Skeletons** - Bone rattle, rib throw
@@ -156,31 +157,68 @@
 
 ## 📦 Key Props/Items
 
-**The Tablet of Thoth:**
-- Ancient stone tablet
-- 3 glowing slots (Blue, Red, Gold)
-- Spell cubes slot into it
-- Player carries it (visible on back?)
-
 **Canopic Satchel:**
-- Infinite bag for loot
+- Infinite bag for loot (worn on belt/back)
 - Based on Canopic jars
 - Hieroglyphic decorations
-
-**Spell Cubes:**
-- Glowing magical cubes
-- Blue = Projectile
-- Red = AOE
-- Gold = Attack
+- Glows when collecting loot
 
 **Powerups (Rare 1% drops):**
 - Hourglass (golden, frozen sand)
 - Sandstorm (swirling particles)
 - Ankh (golden life symbol)
 
+**Build Path Visual Indicators:**
+- Subtle aura around player based on chosen path
+- Anubis: Black & gold shimmer
+- Thoth: Cyan sparkles
+- Ammit: Red mist
+- Ra: Golden flames
+- Set: Blue lightning
+- Apophis: Green poison vapors
+
+---
+
+## ⚡ New Systems Overview (IMPORTANT!)
+
+### 1. POE2-Style Affixes
+**Every weapon/artifact drops with random stat bonuses!**
+- Common: 1-2 affixes ("+7% Fire Damage")
+- Legendary: 5 affixes (5 different stat bonuses!)
+- **35 total affixes** with Egyptian names (see AFFIX_DATABASE.md)
+
+**Visual Needs:**
+- Affix text on item tooltips (golden papyrus style)
+- Affix glow effects (fire = orange, lightning = blue, poison = green)
+- Rarity beams when items drop (white/green/blue/purple/gold)
+
+### 2. Roguelike Level-Up Choices
+**Every level: choose 1 of 3 random upgrades!**
+- 6 divine paths: Anubis, Thoth, Ammit, Ra, Set, Apophis
+- 120 total upgrades across all paths
+- Builds emerge naturally from choices
+
+**Visual Needs:**
+- Level-up choice UI (3 cards with deity icons)
+- Hieroglyphic borders
+- Build path aura (subtle glow per deity)
+
+**Audio Needs:**
+- Level-up fanfare (Egyptian choir + drums)
+- Choice selection sound (deity-specific: jackal howl, thunder crack, etc.)
+
+### 3. Dynamic Difficulty
+**Kill faster = enemies spawn faster + better loot!**
+- No new assets needed, just faster/more enemies
+
 ---
 
 ## 🎬 Mood Reference
+
+**Gameplay References (NEW!):**
+- **Path of Exile 2** - Affix/loot system feel
+- **Hades** - Roguelike build variety
+- **Vampire Survivors** - Auto-attack ARPG loop
 
 **Visual References:**
 - **Clash Royale** - Art style, proportions
@@ -192,6 +230,7 @@
 - **Indiana Jones Theme** - Epic adventure feel
 - **Prince of Egypt Soundtrack** - Egyptian grandeur
 - **Clash Royale SFX** - Satisfying cartoon sounds
+- **Hades** - Divine power sounds for upgrades
 
 **NOT This:**
 - ❌ Scary/horror (it's family-friendly!)
@@ -203,6 +242,7 @@
 - ✅ Epic but fun
 - ✅ Colorful and vibrant
 - ✅ All-ages excitement
+- ✅ Satisfying loot drops (POE2-style)
 
 ---
 
@@ -252,9 +292,12 @@
 - [ ] Weapon trail effects (whip, chakram)
 - [ ] Magic beam VFX (staff)
 - [ ] Time slowdown screen effect
-- [ ] Spell cube glow effects
+- [ ] Affix proc effects (fire/lightning/poison per affix type)
+- [ ] Rarity beam effects (5 colors: white/green/blue/purple/gold)
+- [ ] Build path auras (6 deity-themed auras)
+- [ ] Level-up choice UI (3-card selection screen)
 - [ ] Boss ability VFX
-- [ ] Loot pickup sparkles
+- [ ] Loot pickup sparkles with rarity glow
 
 ### For Andy (Audio):
 - [ ] Main theme (Egyptian adventure, 2-3 min loop)
@@ -264,8 +307,11 @@
 - [ ] Skeleton attack SFX
 - [ ] Mummy attack SFX
 - [ ] Boss music (epic, 2 min loop)
-- [ ] Loot pickup "ding"
+- [ ] Loot pickup sounds (5 variants per rarity)
 - [ ] Time stop/start sound
+- [ ] Level-up fanfare (Egyptian choir + drums)
+- [ ] Choice selection sounds (6 deity-specific)
+- [ ] Affix proc SFX (fire crackle, lightning zap, poison hiss)
 - [ ] UI sounds (menu clicks, etc.)
 
 ---

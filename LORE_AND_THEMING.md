@@ -50,7 +50,7 @@
 
 ### The Infinity Bag: "Canopic Satchel of Infinite Depths"
 
-**Lore:** 
+**Lore:**
 Based on Canopic jars (used to store organs for afterlife), this mystical bag holds infinite items, preserving them in a pocket dimension connected to the Duat (Egyptian underworld).
 
 **Player-Facing Name:** "Canopic Satchel" or "Eternal Cache"
@@ -112,7 +112,7 @@ Based on Canopic jars (used to store organs for afterlife), this mystical bag ho
 ### Tablet Slots (3):
 
 1. **Slot of Projection** (Blue) - Projectile Spell Cube
-2. **Slot of Dominion** (Red) - AOE Spell Cube  
+2. **Slot of Dominion** (Red) - AOE Spell Cube
 3. **Slot of Striking** (Gold) - Attack Skill Cube
 
 ### Spell Cubes - Egyptian Names:
@@ -211,7 +211,7 @@ Based on Canopic jars (used to store organs for afterlife), this mystical bag ho
 
 ## 🎭 Character Names
 
-### Player Character: **"Dr. Zara Ashford"** 
+### Player Character: **"Dr. Zara Ashford"**
 - Blends Indiana Jones (archaeologist adventurer) + Lara Croft (tomb raider)
 - **Backstory:** British-Egyptian archaeologist who specializes in forbidden tombs
 - **Motivation:** Seeking the legendary Tablet of Thoth
@@ -262,18 +262,71 @@ Based on Canopic jars (used to store organs for afterlife), this mystical bag ho
 
 ---
 
+## 🏛️ The Six Divine Paths (Build Archetypes)
+
+### 1. Path of Anubis - The Guardian
+**Symbol:** Jackal ● **Color:** Black & Gold ● **Role:** Tank
+**Lore:** *Protector of tombs, weigher of hearts. Become an unbreakable guardian.*
+
+### 2. Path of Thoth - The Scholar
+**Symbol:** Ibis ● **Color:** Cyan & Silver ● **Role:** Mage
+**Lore:** *God of magic and wisdom. Master devastating spells with precision.*
+
+### 3. Path of Ammit - The Devourer
+**Symbol:** Crocodile ● **Color:** Red & Black ● **Role:** Life Steal
+**Lore:** *Devourer of hearts. Feed on enemies, grow stronger with every kill.*
+
+### 4. Path of Ra - The Sun
+**Symbol:** Solar Disk ● **Color:** Golden Orange ● **Role:** Fire/AOE
+**Lore:** *Sun god, destroyer of darkness. Burn everything with divine fury.*
+
+### 5. Path of Set - The Storm
+**Symbol:** Thunderbolt ● **Color:** Blue & Purple ● **Role:** Speed/Lightning
+**Lore:** *God of storms and chaos. Move like lightning, strike like thunder.*
+
+### 6. Path of Apophis - The Serpent
+**Symbol:** Coiled Viper ● **Color:** Green & Purple ● **Role:** Poison/DOT
+**Lore:** *Chaos serpent. Poison all you touch, watch enemies wither.*
+
+*See ARCHETYPE_SYSTEM.md for complete upgrade lists.*
+
+---
+
 ## 📖 Glossary of Egyptian Terms
 
 **For Team Reference:**
 
+**Deities (Major):**
+- **Anubis:** Jackal god of death, mummification, tomb protection
+- **Thoth:** Ibis god of wisdom, magic, writing, moon
+- **Ammit:** Devourer of unworthy hearts (crocodile/lion/hippo hybrid)
+- **Ra:** Sun god, creator, falcon-headed supreme deity
+- **Set:** God of storms, chaos, desert, foreigners
+- **Apophis:** Giant serpent of chaos, enemy of order
+
+**Deities (Supporting - for Affixes):**
+- **Horus:** Sky god, falcon, swiftness
+- **Isis:** Healing and magic goddess
+- **Osiris:** Afterlife and resurrection
+- **Ma'at:** Truth and balance
+- **Sekhmet:** War lioness goddess
+- **Bastet:** Cat goddess, protection
+- **Khonsu:** Moon god, time
+- **Nut:** Sky goddess, stars
+- **Geb:** Earth god
+- **Sobek:** Crocodile god, strength
+- **Khepri:** Scarab god, rebirth
+
+**Symbols:**
 - **Ankh:** Symbol of life (⚹)
-- **Aten:** Sun disk, symbol of Ra
-- **Canopic:** Jars for storing organs
-- **Duat:** The underworld
+- **Aten:** Sun disk representing Ra
+- **Canopic:** Jars for storing organs for afterlife
+- **Duat:** The Egyptian underworld
 - **Khopesh:** Curved Egyptian sword
-- **Sekhem:** Power/might
-- **Shabti:** Servant figure for afterlife
-- **Wadjet:** Cobra goddess, protector
+- **Sekhem:** Power or might
+- **Shabti:** Servant figure buried with dead
+- **Wadjet:** Cobra goddess, protector of pharaohs
+- **Scarab:** Symbol of rebirth and the sun
 
 ---
 
@@ -295,6 +348,20 @@ Based on Canopic jars (used to store organs for afterlife), this mystical bag ho
 
 5. **Locations:** [Descriptor] + [Egyptian Architectural Term]
    - Example: "Chamber of Eternal Stillness"
+
+6. **Affixes:** [Deity Name] + [Attribute/Concept]
+   - Example: "Ra's Fury" (+Fire Damage)
+   - Example: "Anubis's Judgment" (+Crit Chance)
+   - Example: "Thoth's Wisdom" (+XP Gain)
+
+7. **Build Paths:** "Path of [Deity]"
+   - Example: "Path of Anubis" (Tank archetype)
+   - Example: "Path of Ra" (Fire archetype)
+
+8. **Path Upgrades:** [Deity] + [Concept/Blessing]
+   - Example: "Anubis's Fortitude" (+Maximum Health)
+   - Example: "Thoth's Precision" (+Cast Speed)
+   - Example: "Set's Swiftness" (+Movement Speed)
 
 ---
 

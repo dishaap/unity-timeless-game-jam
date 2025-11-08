@@ -20,7 +20,7 @@
 **Phase 2: Unused Shader Packages** ✅
 - RealToon Built-In RP shaders (not using)
 - RealToon HDRP shaders (not using)
-- RealToon LWRP shaders (not using)  
+- RealToon LWRP shaders (not using)
 - Kept: Only URP shaders (what project actually uses)
 
 **Phase 3: Committed & Pushed** ✅
@@ -42,11 +42,11 @@
    - File → Exit
    - Wait for Unity to fully close
 
-2. **Delete Cache Folders** 
+2. **Delete Cache Folders**
    ```powershell
    # Run in PowerShell from project directory:
    cd C:\Users\NicDev\unity-timeless-game-jam
-   
+
    Remove-Item -Path "Library" -Recurse -Force
    Remove-Item -Path "Temp" -Recurse -Force
    ```
@@ -241,7 +241,7 @@ Once Unity is stable:
 
 ```
 3c4cc401 perf(cleanup): streamline project for stability
-325c43be docs(cleanup): add project streamlining plan  
+325c43be docs(cleanup): add project streamlining plan
 6bf1af3a fix(docs): normalize line endings
 ```
 
