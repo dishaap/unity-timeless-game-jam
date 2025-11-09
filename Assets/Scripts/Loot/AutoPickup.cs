@@ -1,60 +1,33 @@
 using UnityEngine;
-using BLINK.RPGBuilder.Managers;
-using BLINK.RPGBuilder.Logic;
+using MalbersAnimations;
 
-
-/// <summary>
-/// Detect whether player has picked up collectible loot.
-/// </summary>
-
-
-[RequireComponent(typeof(SphereCollider))]
+[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(LootDrop))]
 public class AutoPickup : MonoBehaviour
 {
-    [Header("Auto Pickup Settings")]
-    [Tooltip("Distance at which loot is detected.")]
-    [SerializeField] private float pickupRadius = 2.5f;
-    [Tooltip("Layer Mask for loot.")]
-    [SerializeField] private LayerMask lootLayer;
+    private LootDrop lootDrop;
+    public string playerTag = "Player";
 
-    private AudioSource audioSource;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    private void Awake()
     {
-        SphereCollider col = GetComponent<SphereCollider>();
-        col.isTrigger = true;
-        col.radius = pickupRadius;
-
-        if(!audioSource)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.spatialBlend = 1f;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        lootDrop = GetComponent<LootDrop>();
+        Collider col = GetComponent<Collider>();
+        if (col != null) col.isTrigger = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // If trigger is not on Loot layer, return
-        if ((lootLayer.value & (1 << other.gameObject.layer)) == 0) return;
+        if (!other.CompareTag(playerTag)) return;
 
-        // find RPGMaker Loot component
-        LootDrop drop = other.GetComponent<LootDrop>();
-        if (drop == null) return;
+        // Play pickup sound
+        if (lootDrop.pickupSound != null)
+            AudioSource.PlayClipAtPoint(lootDrop.pickupSound, transform.position);
 
-        // add loot to inventory
-        InventoryManager.Instance.AddItem(drop.itemID, drop.amount, true, drop.itemDataID);
-        // TODO: add check for loot existing in inventory
+        // Apply effect
+        var buffHandler = other.GetComponent<PlayerBuffHandler>();
+        if (buffHandler != null)
+            buffHandler.ApplyTemporaryBuff();
 
-        if (drop.pickupSound) audioSource.PlayOneShot(drop.pickupSound);
-
-        Destroy(other.gameObject);
-        Debug.Log($"Picked up item {drop.itemID}");
+        Destroy(gameObject);
     }
 }
