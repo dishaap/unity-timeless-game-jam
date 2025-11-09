@@ -11,6 +11,7 @@ public class LootDrop : MonoBehaviour
 
     [Header("Loot Data")]
     public int itemID;
+    public float value;
     public int amount = 1;
     [Tooltip("Optional, for unique items")]
     public int itemDataID = -1;
