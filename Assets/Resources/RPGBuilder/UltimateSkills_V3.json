@@ -1,0 +1,298 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "Ultimate abilities system with charge-based god-like powers",
+  "ultimateSystem": {
+    "chargeMechanic": {
+      "maxCharge": 100,
+      "chargeRate": 5,
+      "chargeFromCombat": 2,
+      "chargeFromMovement": 1,
+      "overchargeCap": 150,
+      "cooldownAfterUse": 0
+    },
+    "globalEffects": {
+      "screenShake": true,
+      "timeSlow": 0.3,
+      "particleBurst": "divine_energy",
+      "soundEffect": "godly_roar",
+      "screenFlash": "#FFD700"
+    }
+  },
+  "ultimateSkills": [
+    {
+      "id": "rolling_boulders",
+      "name": "Rolling Boulders of Geb",
+      "displayName": "Geb's Earth Shatter",
+      "description": "Summons massive boulders that roll across the entire screen, knocking back all enemies",
+      "chargeCost": 80,
+      "cooldown": 0,
+      "duration": 2.5,
+      "effects": [
+        {
+          "type": "knockback_wave",
+          "damage": 50,
+          "knockbackForce": 50,
+          "waveCount": 3,
+          "waveDelay": 0.3,
+          "screenCoverage": 1.0,
+          "direction": "screen_sweep"
+        },
+        {
+          "type": "stun",
+          "duration": 1.0,
+          "chance": 100
+        }
+      ],
+      "visualEffects": {
+        "boulderSpawn": "earth_eruption",
+        "rollingTrail": "dust_cloud",
+        "impactEffect": "ground_crack",
+        "screenEffect": "earthquake_shake"
+      },
+      "soundEffects": {
+        "activation": "earth_rumble",
+        "rolling": "boulder_crash",
+        "impact": "ground_shatter"
+      },
+      "lore": "Geb, father of the gods, commands the very earth to rise up and crush his enemies in an avalanche of divine fury.",
+      "upgradePath": [
+        {
+          "level": 1,
+          "damage": 50,
+          "knockbackForce": 50,
+          "waveCount": 3
+        },
+        {
+          "level": 2,
+          "damage": 75,
+          "knockbackForce": 65,
+          "waveCount": 4
+        },
+        {
+          "level": 3,
+          "damage": 100,
+          "knockbackForce": 80,
+          "waveCount": 5
+        },
+        {
+          "level": 4,
+          "damage": 125,
+          "knockbackForce": 100,
+          "waveCount": 6
+        },
+        {
+          "level": 5,
+          "damage": 150,
+          "knockbackForce": 120,
+          "waveCount": 7
+        }
+      ]
+    },
+    {
+      "id": "speed_boost",
+      "name": "Horus' Divine Speed",
+      "displayName": "Horus' Falcon Flight",
+      "description": "Channels the falcon god's incredible speed, massively boosting attack and movement speed",
+      "chargeCost": 60,
+      "cooldown": 0,
+      "duration": 8.0,
+      "effects": [
+        {
+          "type": "stat_boost",
+          "stats": [
+            {
+              "statId": "movement_speed",
+              "value": 3.0,
+              "isPercentage": false
+            },
+            {
+              "statId": "attack_speed",
+              "value": 1.0,
+              "isPercentage": true
+            }
+          ],
+          "duration": 8.0
+        },
+        {
+          "type": "dash_ability",
+          "range": 15,
+          "cooldown": 0.5,
+          "damage": 25
+        }
+      ],
+      "visualEffects": {
+        "activation": "falcon_wings_burst",
+        "activeAura": "speed_trail",
+        "dashEffect": "falcon_dive",
+        "deactivation": "wing_flap_burst"
+      },
+      "soundEffects": {
+        "activation": "falcon_cry",
+        "active": "wind_rush",
+        "dash": "sonic_boom",
+        "deactivation": "wing_beats"
+      },
+      "lore": "Horus, the falcon-headed sky god, lends his wings to the worthy, carrying them through battle with divine swiftness.",
+      "upgradePath": [
+        {
+          "level": 1,
+          "movementSpeed": 3.0,
+          "attackSpeedBonus": 1.0,
+          "dashDamage": 25
+        },
+        {
+          "level": 2,
+          "movementSpeed": 3.5,
+          "attackSpeedBonus": 1.25,
+          "dashDamage": 35
+        },
+        {
+          "level": 3,
+          "movementSpeed": 4.0,
+          "attackSpeedBonus": 1.5,
+          "dashDamage": 45
+        },
+        {
+          "level": 4,
+          "movementSpeed": 4.5,
+          "attackSpeedBonus": 1.75,
+          "dashDamage": 55
+        },
+        {
+          "level": 5,
+          "movementSpeed": 5.0,
+          "attackSpeedBonus": 2.0,
+          "dashDamage": 65
+        }
+      ]
+    },
+    {
+      "id": "divine_immunity",
+      "name": "Isis' Divine Protection",
+      "displayName": "Isis' Sacred Immunity",
+      "description": "Grants complete immunity to all damage and reflects damage back to attackers",
+      "chargeCost": 100,
+      "cooldown": 0,
+      "duration": 5.0,
+      "effects": [
+        {
+          "type": "damage_immunity",
+          "duration": 5.0,
+          "damageReflection": 50,
+          "healingPulse": 10
+        },
+        {
+          "type": "stat_boost",
+          "stats": [
+            {
+              "statId": "health_regen",
+              "value": 50,
+              "isPercentage": true
+            }
+          ],
+          "duration": 5.0
+        }
+      ],
+      "visualEffects": {
+        "activation": "divine_shield_burst",
+        "activeAura": "golden_barrier",
+        "damageReflection": "energy_burst",
+        "deactivation": "shield_fade"
+      },
+      "soundEffects": {
+        "activation": "divine_chorus",
+        "active": "protection_hum",
+        "reflection": "energy_ping",
+        "deactivation": "shield_drop"
+      },
+      "lore": "Isis, mother of gods and mistress of magic, weaves a cocoon of divine protection that no force can penetrate.",
+      "upgradePath": [
+        {
+          "level": 1,
+          "duration": 5.0,
+          "damageReflection": 50,
+          "healingPulse": 10
+        },
+        {
+          "level": 2,
+          "duration": 6.0,
+          "damageReflection": 65,
+          "healingPulse": 15
+        },
+        {
+          "level": 3,
+          "duration": 7.0,
+          "damageReflection": 80,
+          "healingPulse": 20
+        },
+        {
+          "level": 4,
+          "duration": 8.0,
+          "damageReflection": 100,
+          "healingPulse": 25
+        },
+        {
+          "level": 5,
+          "duration": 10.0,
+          "damageReflection": 125,
+          "healingPulse": 30
+        }
+      ]
+    }
+  ],
+  "ultimateMechanics": {
+    "chargeDisplay": {
+      "position": "top_center",
+      "style": "circular_progress",
+      "colors": {
+        "empty": "#666666",
+        "filled": "#FFD700",
+        "overcharge": "#FF6B35"
+      },
+      "animations": {
+        "charging": "energy_sparkle",
+        "ready": "golden_glow",
+        "overcharge": "flame_burst"
+      }
+    },
+    "activationSystem": {
+      "inputMethod": "hold_charge_key",
+      "chargeHoldTime": 0.5,
+      "cancelWindow": 0.3,
+      "quickCast": true
+    },
+    "balancingFactors": {
+      "globalCooldown": 0.5,
+      "chargeScalingWithDifficulty": true,
+      "archetypeModifiers": {
+        "anubis_judge": {"chargeRate": 1.2, "damageReflection": 1.1},
+        "thoth_scholar": {"chargeRate": 1.1, "projectileCount": 2},
+        "ammit_devourer": {"chargeRate": 1.3, "lifeSteal": 1.2},
+        "ra_sun": {"chargeRate": 1.1, "areaDamage": 1.3},
+        "set_storm": {"chargeRate": 1.2, "knockbackForce": 1.4},
+        "apophis_chaos": {"chargeRate": 1.1, "areaDamage": 1.2}
+      }
+    },
+    "comboSystem": {
+      "skillCombos": [
+        {
+          "combo": ["speed_boost", "rolling_boulders"],
+          "bonusEffect": "falcon_dive_boulder",
+          "description": "Horus' speed carries Geb's boulders with devastating force"
+        },
+        {
+          "combo": ["divine_immunity", "rolling_boulders"],
+          "bonusEffect": "protected_earthquake",
+          "description": "Isis' protection amplifies Geb's earth-shattering power"
+        },
+        {
+          "combo": ["speed_boost", "divine_immunity"],
+          "bonusEffect": "untouchable_flight",
+          "description": "Horus' wings and Isis' protection create perfect evasion"
+        }
+      ],
+      "comboWindow": 3.0,
+      "comboBonusMultiplier": 1.5
+    }
+  }
+}

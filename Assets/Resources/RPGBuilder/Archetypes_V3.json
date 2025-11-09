@@ -1,0 +1,185 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "6 Divine Archetypes for roguelike level-up progression system",
+  "archetypes": [
+    {
+      "id": "anubis_judge",
+      "name": "Path of Anubis",
+      "displayName": "Judge of Souls",
+      "description": "Master of judgment and precision, the jackal-headed god weighs the worth of every strike",
+      "symbol": "Scales",
+      "color": "#8B4513",
+      "theme": "Precision and Critical Strikes",
+      "weaponPreference": ["khopesh_sword", "blowgun_darts"],
+      "playstyle": "High-risk, high-reward critical damage focused",
+      "lore": "Walk the path of Anubis, where every strike is weighed on divine scales. Those found worthy strike with the force of judgment itself.",
+      "baseStats": {
+        "critical_chance": 8,
+        "critical_multiplier": 1.3,
+        "movement_speed": 0.8
+      },
+      "upgradePool": [
+        {
+          "id": "judgment_strike",
+          "name": "Judgment Strike",
+          "description": "+15% Critical Chance",
+          "effects": [{"statId": "critical_chance", "value": 15, "isPercentage": true}],
+          "rarity": "common"
+        },
+        {
+          "id": "scales_verdict",
+          "name": "Scales' Verdict",
+          "description": "+25% Critical Multiplier",
+          "effects": [{"statId": "critical_multiplier", "value": 0.25, "isPercentage": true}],
+          "rarity": "uncommon"
+        },
+        {
+          "id": "weighed_soul",
+          "name": "Weighed Soul",
+          "description": "Critical hits restore 5 health",
+          "effects": [{"statId": "life_steal", "value": 5, "isPercentage": true}],
+          "rarity": "rare"
+        },
+        {
+          "id": "divine_accuracy",
+          "name": "Divine Accuracy",
+          "description": "+20% Projectile Speed",
+          "effects": [{"statId": "projectile_speed", "value": 20, "isPercentage": true}],
+          "rarity": "common"
+        },
+        {
+          "id": "jackal_precision",
+          "name": "Jackal Precision",
+          "description": "+30% Attack Speed",
+          "effects": [{"statId": "attack_speed", "value": 0.3, "isPercentage": true}],
+          "rarity": "uncommon"
+        },
+        {
+          "id": "eternal_judgment",
+          "name": "Eternal Judgment",
+          "description": "Critical hits deal +50% area damage",
+          "effects": [{"statId": "area_damage", "value": 50, "isPercentage": true}],
+          "rarity": "epic"
+        },
+        {
+          "id": "soul_weigher",
+          "name": "Soul Weigher",
+          "description": "+2 Projectile Count",
+          "effects": [{"statId": "projectile_count", "value": 2, "isPercentage": false}],
+          "rarity": "rare"
+        },
+        {
+          "id": "anubis_wrath",
+          "name": "Anubis' Wrath",
+          "description": "+40% Damage",
+          "effects": [{"statId": "damage", "value": 40, "isPercentage": true}],
+          "rarity": "epic"
+        },
+        {
+          "id": "balance_restored",
+          "name": "Balance Restored",
+          "description": "+25% Health Regen",
+          "effects": [{"statId": "health_regen", "value": 25, "isPercentage": true}],
+          "rarity": "uncommon"
+        },
+        {
+          "id": "divine_scales",
+          "name": "Divine Scales",
+          "description": "+20% Divine Favor",
+          "effects": [{"statId": "divine_favor", "value": 0.2, "isPercentage": true}],
+          "rarity": "legendary"
+        },
+        {
+          "id": "jackal_hunt",
+          "name": "Jackal Hunt",
+          "description": "+20% Movement Speed",
+          "effects": [{"statId": "movement_speed", "value": 20, "isPercentage": true}],
+          "rarity": "rare"
+        },
+        {
+          "id": "soul_harvest",
+          "name": "Soul Harvest",
+          "description": "+15% Life Steal",
+          "effects": [{"statId": "life_steal", "value": 15, "isPercentage": true}],
+          "rarity": "epic"
+        },
+        {
+          "id": "judgment_echo",
+          "name": "Judgment Echo",
+          "description": "Critical hits create echo projectiles",
+          "effects": [{"statId": "projectile_count", "value": 1, "isPercentage": false}],
+          "rarity": "legendary"
+        },
+        {
+          "id": "scale_mastery",
+          "name": "Scale Mastery",
+          "description": "+50% Experience Gain",
+          "effects": [{"statId": "experience_multiplier", "value": 0.5, "isPercentage": true}],
+          "rarity": "rare"
+        },
+        {
+          "id": "eternal_weigher",
+          "name": "Eternal Weigher",
+          "description": "+100 Health",
+          "effects": [{"statId": "health", "value": 100, "isPercentage": false}],
+          "rarity": "uncommon"
+        },
+        {
+          "id": "divine_crit",
+          "name": "Divine Critical",
+          "description": "+25% Critical Chance",
+          "effects": [{"statId": "critical_chance", "value": 25, "isPercentage": true}],
+          "rarity": "epic"
+        },
+        {
+          "id": "soul_judge",
+          "name": "Soul Judge",
+          "description": "+30% Loot Multiplier",
+          "effects": [{"statId": "loot_multiplier", "value": 0.3, "isPercentage": true}],
+          "rarity": "uncommon"
+        },
+        {
+          "id": "anubis_favor",
+          "name": "Anubis' Favor",
+          "description": "+35% Critical Multiplier",
+          "effects": [{"statId": "critical_multiplier", "value": 0.35, "isPercentage": true}],
+          "rarity": "legendary"
+        },
+        {
+          "id": "balance_keeper",
+          "name": "Balance Keeper",
+          "description": "+50% Knockback Force",
+          "effects": [{"statId": "knockback_force", "value": 50, "isPercentage": true}],
+          "rarity": "rare"
+        },
+        {
+          "id": "eternal_judge",
+          "name": "Eternal Judge",
+          "description": "All stats +10%",
+          "effects": [{"statId": "divine_favor", "value": 0.1, "isPercentage": true}],
+          "rarity": "legendary"
+        }
+      ]
+    }
+  ],
+  "levelUpSystem": {
+    "choicesPerLevel": 3,
+    "randomSelection": true,
+    "rarityWeights": {
+      "common": 40,
+      "uncommon": 30,
+      "rare": 20,
+      "epic": 8,
+      "legendary": 2
+    },
+    "archetypeLockIn": 5,
+    "pathSynergies": {
+      "anubis_judge-thoth_scholar": "Precision multiplied by wisdom creates perfect knowledge",
+      "ra_sun-ammit_devourer": "Solar light sustains the eternal hunger",
+      "set_storm-apophis_chaos": "Storm winds carry serpentine chaos",
+      "anubis_judge-set_storm": "Judgment tempers chaotic fury",
+      "thoth_scholar-ra_sun": "Wisdom illuminates the path of light",
+      "ammit_devourer-apophis_chaos": "Hunger embraces eternal entropy"
+    }
+  }
+}

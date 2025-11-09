@@ -1,0 +1,185 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "6 Egyptian-themed weapons with affix support for random stat generation",
+  "weapons": [
+    {
+      "id": "khopesh_sword",
+      "name": "Khopesh Sword",
+      "displayName": "Anubis' Khopesh",
+      "description": "Curved blade of the jackal-headed god, sickle-shaped for divine judgment",
+      "weaponType": "melee",
+      "rarity": "common",
+      "baseStats": {
+        "damage": 25,
+        "attack_speed": 1.2,
+        "critical_chance": 5,
+        "knockback_force": 15
+      },
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "lore": "Forged from the teeth of Anubis himself, this curved blade slices through the unworthy like judgment upon the scales.",
+      "visualEffects": ["golden_glow", "jackal_spirit"],
+      "soundEffects": ["khopesh_swing", "flesh_tear"]
+    },
+    {
+      "id": "torch_staff",
+      "name": "Torch Staff",
+      "displayName": "Ra's Eternal Flame",
+      "description": "Staff topped with eternal flame, burning away the shadows of the tomb",
+      "weaponType": "magic_staff",
+      "rarity": "common",
+      "baseStats": {
+        "damage": 18,
+        "attack_speed": 0.8,
+        "projectile_speed": 12,
+        "area_damage": 8,
+        "critical_multiplier": 1.5
+      },
+      "affixSlots": 4,
+      "maxAffixes": 4,
+      "lore": "The eternal flame of Ra, burning since the first dawn, now wielded to illuminate the path through darkness.",
+      "visualEffects": ["flame_trail", "smoke_particles", "heat_distortion"],
+      "soundEffects": ["torch_ignite", "flame_burst", "crackle"]
+    },
+    {
+      "id": "chakram_blade",
+      "name": "Chakram Blade",
+      "displayName": "Horus' Wing Blade",
+      "description": "Throwing blade shaped like falcon wings, returning like the eye of Horus",
+      "weaponType": "ranged_projectile",
+      "rarity": "common",
+      "baseStats": {
+        "damage": 22,
+        "attack_speed": 1.5,
+        "projectile_speed": 18,
+        "projectile_count": 1,
+        "critical_chance": 8
+      },
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "lore": "Wings of the falcon god, these blades fly true and return to the hand that commands them with divine precision.",
+      "visualEffects": ["wing_trail", "golden_feathers", "return_glow"],
+      "soundEffects": ["wing_flap", "blade_spin", "return_whistle"]
+    },
+    {
+      "id": "scorpion_whip",
+      "name": "Scorpion Whip",
+      "displayName": "Serket's Stinger",
+      "description": "Whip crafted from scorpion tails, lashing out with venomous fury",
+      "weaponType": "melee_whip",
+      "rarity": "common",
+      "baseStats": {
+        "damage": 20,
+        "attack_speed": 1.8,
+        "knockback_force": 25,
+        "life_steal": 3,
+        "critical_chance": 6
+      },
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "lore": "Each strand woven from the tails of sacred scorpions, blessed by Serket to deliver both pain and sustenance.",
+      "visualEffects": ["venom_drip", "chain_glow", "stinger_sparks"],
+      "soundEffects": ["whip_crack", "venom_sizzle", "chain_rattle"]
+    },
+    {
+      "id": "anubis_staff",
+      "name": "Anubis Staff",
+      "displayName": "Staff of Divine Judgment",
+      "description": "Staff of Anubis channeling laser-like beams of judgment from the underworld",
+      "weaponType": "magic_staff",
+      "rarity": "common",
+      "baseStats": {
+        "damage": 30,
+        "attack_speed": 0.6,
+        "projectile_speed": 25,
+        "critical_multiplier": 2.0,
+        "area_damage": 15
+      },
+      "affixSlots": 4,
+      "maxAffixes": 4,
+      "lore": "The staff of judgment itself, channeling the underworld's gaze to pierce through flesh and soul alike.",
+      "visualEffects": ["laser_beam", "soul_particles", "judgment_runes"],
+      "soundEffects": ["laser_charge", "soul_scream", "judgment_bell"]
+    },
+    {
+      "id": "blowgun_darts",
+      "name": "Blowgun Darts",
+      "displayName": "Khepri's Sting",
+      "description": "Ancient blowgun firing darts tipped with scarab beetle venom",
+      "weaponType": "ranged_projectile",
+      "rarity": "common",
+      "baseStats": {
+        "damage": 15,
+        "attack_speed": 2.0,
+        "projectile_speed": 20,
+        "projectile_count": 1,
+        "critical_chance": 12,
+        "life_steal": 5
+      },
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "lore": "Darts blessed by Khepri, each one carrying the transformative power of the scarab's eternal cycle.",
+      "visualEffects": ["scarab_trail", "venom_cloud", "transformation_sparks"],
+      "soundEffects": ["dart_whistle", "venom_bubble", "transformation_chime"]
+    }
+  ],
+  "rarityTiers": [
+    {
+      "tier": "common",
+      "color": "#FFFFFF",
+      "affixRange": [0, 1],
+      "statMultiplier": 1.0,
+      "dropChance": 60
+    },
+    {
+      "tier": "uncommon",
+      "color": "#00FF00",
+      "affixRange": [1, 2],
+      "statMultiplier": 1.2,
+      "dropChance": 25
+    },
+    {
+      "tier": "rare",
+      "color": "#0080FF",
+      "affixRange": [2, 3],
+      "statMultiplier": 1.5,
+      "dropChance": 10
+    },
+    {
+      "tier": "epic",
+      "color": "#8000FF",
+      "affixRange": [3, 4],
+      "statMultiplier": 2.0,
+      "dropChance": 4
+    },
+    {
+      "tier": "legendary",
+      "color": "#FFD700",
+      "affixRange": [4, 5],
+      "statMultiplier": 2.5,
+      "dropChance": 1
+    }
+  ],
+  "weaponCategories": {
+    "melee": {
+      "description": "Close combat weapons",
+      "weapons": ["khopesh_sword", "scorpion_whip"]
+    },
+    "ranged_projectile": {
+      "description": "Projectile-based ranged weapons",
+      "weapons": ["chakram_blade", "blowgun_darts"]
+    },
+    "magic_staff": {
+      "description": "Magical channeling weapons",
+      "weapons": ["torch_staff", "anubis_staff"]
+    }
+  },
+  "affixCompatibility": {
+    "khopesh_sword": ["damage", "critical_chance", "knockback_force", "life_steal", "attack_speed"],
+    "torch_staff": ["damage", "area_damage", "projectile_speed", "critical_multiplier", "health_regen"],
+    "chakram_blade": ["damage", "projectile_speed", "critical_chance", "projectile_count", "movement_speed"],
+    "scorpion_whip": ["damage", "knockback_force", "life_steal", "attack_speed", "critical_chance"],
+    "anubis_staff": ["damage", "critical_multiplier", "area_damage", "projectile_speed", "divine_favor"],
+    "blowgun_darts": ["damage", "critical_chance", "life_steal", "projectile_speed", "experience_multiplier"]
+  }
+}

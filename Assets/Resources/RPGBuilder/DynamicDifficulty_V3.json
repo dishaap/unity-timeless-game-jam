@@ -1,0 +1,275 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "Dynamic difficulty scaling system based on Kills Per Minute (KPM) tracking",
+  "kpmSystem": {
+    "trackingWindow": 60,
+    "updateInterval": 5,
+    "smoothingFactor": 0.8,
+    "minimumKpm": 0,
+    "maximumKpm": 50,
+    "kpmDisplay": {
+      "position": "top_right",
+      "format": "KPM: {current}/{peak}",
+      "colors": {
+        "low": "#00FF00",
+        "medium": "#FFFF00",
+        "high": "#FF6B35",
+        "extreme": "#DC143C"
+      }
+    }
+  },
+  "difficultyTiers": [
+    {
+      "tier": "merciful",
+      "kpmRange": [0, 2],
+      "multiplier": 0.5,
+      "description": "For those still learning the ways of the gods",
+      "enemyStats": {
+        "healthMultiplier": 0.7,
+        "damageMultiplier": 0.6,
+        "speedMultiplier": 0.8,
+        "spawnRateMultiplier": 0.6
+      },
+      "rewards": {
+        "experienceMultiplier": 1.2,
+        "lootMultiplier": 1.1
+      },
+      "visualIndicator": "gentle_glow"
+    },
+    {
+      "tier": "balanced",
+      "kpmRange": [2, 5],
+      "multiplier": 1.0,
+      "description": "The true challenge of the underworld",
+      "enemyStats": {
+        "healthMultiplier": 1.0,
+        "damageMultiplier": 1.0,
+        "speedMultiplier": 1.0,
+        "spawnRateMultiplier": 1.0
+      },
+      "rewards": {
+        "experienceMultiplier": 1.0,
+        "lootMultiplier": 1.0
+      },
+      "visualIndicator": "balanced_aura"
+    },
+    {
+      "tier": "challenging",
+      "kpmRange": [5, 10],
+      "multiplier": 1.5,
+      "description": "The gods watch your worthy struggle",
+      "enemyStats": {
+        "healthMultiplier": 1.3,
+        "damageMultiplier": 1.2,
+        "speedMultiplier": 1.1,
+        "spawnRateMultiplier": 1.4
+      },
+      "rewards": {
+        "experienceMultiplier": 0.9,
+        "lootMultiplier": 0.95
+      },
+      "visualIndicator": "divine_attention"
+    },
+    {
+      "tier": "divine",
+      "kpmRange": [10, 15],
+      "multiplier": 2.0,
+      "description": "You fight with the fury of the gods themselves",
+      "enemyStats": {
+        "healthMultiplier": 1.6,
+        "damageMultiplier": 1.5,
+        "speedMultiplier": 1.3,
+        "spawnRateMultiplier": 1.8
+      },
+      "rewards": {
+        "experienceMultiplier": 0.8,
+        "lootMultiplier": 0.9
+      },
+      "visualIndicator": "godly_presence"
+    },
+    {
+      "tier": "legendary",
+      "kpmRange": [15, 20],
+      "multiplier": 2.5,
+      "description": "Legends will be told of your divine slaughter",
+      "enemyStats": {
+        "healthMultiplier": 2.0,
+        "damageMultiplier": 1.8,
+        "speedMultiplier": 1.5,
+        "spawnRateMultiplier": 2.2
+      },
+      "rewards": {
+        "experienceMultiplier": 0.7,
+        "lootMultiplier": 0.85
+      },
+      "visualIndicator": "legendary_aura"
+    },
+    {
+      "tier": "mythical",
+      "kpmRange": [20, 30],
+      "multiplier": 3.0,
+      "description": "You transcend mortal limits, becoming a force of nature",
+      "enemyStats": {
+        "healthMultiplier": 2.5,
+        "damageMultiplier": 2.2,
+        "speedMultiplier": 1.8,
+        "spawnRateMultiplier": 2.8
+      },
+      "rewards": {
+        "experienceMultiplier": 0.6,
+        "lootMultiplier": 0.8
+      },
+      "visualIndicator": "mythical_storm"
+    },
+    {
+      "tier": "godlike",
+      "kpmRange": [30, 40],
+      "multiplier": 4.0,
+      "description": "The gods themselves bow to your supremacy",
+      "enemyStats": {
+        "healthMultiplier": 3.0,
+        "damageMultiplier": 2.5,
+        "speedMultiplier": 2.0,
+        "spawnRateMultiplier": 3.5
+      },
+      "rewards": {
+        "experienceMultiplier": 0.5,
+        "lootMultiplier": 0.75
+      },
+      "visualIndicator": "godlike_radiance"
+    },
+    {
+      "tier": "transcendent",
+      "kpmRange": [40, 50],
+      "multiplier": 5.0,
+      "description": "You have become something beyond comprehension",
+      "enemyStats": {
+        "healthMultiplier": 4.0,
+        "damageMultiplier": 3.0,
+        "speedMultiplier": 2.5,
+        "spawnRateMultiplier": 4.5
+      },
+      "rewards": {
+        "experienceMultiplier": 0.4,
+        "lootMultiplier": 0.7
+      },
+      "visualIndicator": "transcendent_void"
+    }
+  ],
+  "spawnScaling": {
+    "baseSpawnRate": 1.0,
+    "kpmSpawnMultiplier": 0.1,
+    "maxSpawnRate": 10.0,
+    "spawnRateFormula": "baseRate + (kpm * multiplier)",
+    "spawnBursts": {
+      "enabled": true,
+      "burstThreshold": 25,
+      "burstMultiplier": 2.0,
+      "burstDuration": 10,
+      "burstCooldown": 30
+    },
+    "eliteSpawning": {
+      "eliteThreshold": 15,
+      "eliteChance": "kpm * 0.02",
+      "eliteMultiplier": 2.0,
+      "bossThreshold": 35,
+      "bossChance": "kpm * 0.01"
+    }
+  },
+  "adaptiveMechanics": {
+    "healthScaling": {
+      "formula": "baseHealth * (1 + (kpm * 0.05))",
+      "maxHealthMultiplier": 5.0
+    },
+    "damageScaling": {
+      "formula": "baseDamage * (1 + (kpm * 0.04))",
+      "maxDamageMultiplier": 4.0
+    },
+    "speedScaling": {
+      "formula": "baseSpeed * (1 + (kpm * 0.02))",
+      "maxSpeedMultiplier": 3.0
+    },
+    "resistanceScaling": {
+      "damageReduction": "kpm * 0.01",
+      "maxDamageReduction": 0.5
+    }
+  },
+  "playerAssistance": {
+    "difficultyDips": {
+      "enabled": true,
+      "dipThreshold": 5,
+      "dipDuration": 15,
+      "recoveryRate": 0.8,
+      "description": "Brief periods of mercy when performance drops"
+    },
+    "performanceStreaks": {
+      "streakBonus": {
+        "threshold": 10,
+        "bonusMultiplier": 1.2,
+        "duration": 30
+      },
+      "comboSystem": {
+        "killComboThreshold": 50,
+        "comboMultiplier": 1.5,
+        "comboDuration": 20
+      }
+    }
+  },
+  "feedbackSystem": {
+    "tierNotifications": {
+      "enabled": true,
+      "displayTime": 3,
+      "position": "center_screen",
+      "animations": {
+        "tier_up": "golden_burst",
+        "tier_down": "fade_warning"
+      }
+    },
+    "performanceIndicators": {
+      "kpmMeter": true,
+      "difficultyMeter": true,
+      "streakCounter": true,
+      "threatLevel": true
+    },
+    "audioFeedback": {
+      "tierUpSound": "divine_ascension",
+      "tierDownSound": "warning_chime",
+      "highKpmSound": "epic_music_sting",
+      "extremeKpmSound": "godly_chorus"
+    }
+  },
+  "balancingTweaks": {
+    "kpmDamping": {
+      "recentBias": 0.7,
+      "historicalBias": 0.3,
+      "smoothingWindow": 10
+    },
+    "difficultyFloor": {
+      "minimumTier": "balanced",
+      "gracePeriod": 60,
+      "newPlayerProtection": true
+    },
+    "extremeMode": {
+      "threshold": 45,
+      "specialRules": {
+        "noHealing": false,
+        "increasedUltimates": true,
+        "specialEnemies": true
+      }
+    }
+  },
+  "dataCollection": {
+    "metrics": [
+      "averageKpm",
+      "peakKpm",
+      "timeInTiers",
+      "difficultyTransitions",
+      "playerSurvivalRate"
+    ],
+    "balancingData": {
+      "kpmDistribution": true,
+      "tierDistribution": true,
+      "completionRates": true
+    }
+  }
+}
