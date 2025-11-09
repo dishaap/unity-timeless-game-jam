@@ -60,7 +60,7 @@ public class GlobalTimer : MonoBehaviour
     // attach to button for resetting timer, testing purposes
     public void ResetTimer()
     {
-        currentTime = startTime;
+        currentTime = totalTime;
         isRunning = true;
         eventFired = false;
         UpdateTimerDisplay();
