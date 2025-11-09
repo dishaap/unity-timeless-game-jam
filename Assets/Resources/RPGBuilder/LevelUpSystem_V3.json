@@ -1,0 +1,259 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "Roguelike level-up system with archetype-based random upgrade choices",
+  "levelUpMechanics": {
+    "experienceRequired": {
+      "baseXP": 100,
+      "scalingFactor": 1.2,
+      "levelCap": 50,
+      "formula": "baseXP * pow(scalingFactor, level - 1)"
+    },
+    "choiceSystem": {
+      "choicesPerLevel": 3,
+      "selectionTimeLimit": 15,
+      "randomization": {
+        "archetypeWeight": 0.6,
+        "rarityWeight": 0.3,
+        "synergyWeight": 0.1
+      },
+      "uiElements": {
+        "choiceCards": {
+          "layout": "horizontal",
+          "animation": "card_flip",
+          "highlighting": "archetype_colors"
+        },
+        "statPreview": {
+          "showCurrentValue": true,
+          "showNewValue": true,
+          "showPercentageChange": true
+        }
+      }
+    },
+    "archetypeIntegration": {
+      "pathLockIn": {
+        "levelThreshold": 5,
+        "commitmentBonus": 1.25,
+        "pathRestriction": "primary_only"
+      },
+      "synergyBonuses": {
+        "dualPath": {
+          "enabled": false,
+          "bonusMultiplier": 1.1
+        },
+        "triPath": {
+          "enabled": false,
+          "bonusMultiplier": 1.15
+        }
+      }
+    }
+  },
+  "upgradeCategories": [
+    {
+      "id": "combat_upgrades",
+      "name": "Combat Mastery",
+      "description": "Enhance your direct combat effectiveness",
+      "icon": "sword_crossed",
+      "color": "#DC143C",
+      "weight": 30
+    },
+    {
+      "id": "magical_upgrades",
+      "name": "Divine Magic",
+      "description": "Amplify your spellcasting and magical abilities",
+      "icon": "magic_orb",
+      "color": "#4169E1",
+      "weight": 25
+    },
+    {
+      "id": "survival_upgrades",
+      "name": "Immortal Endurance",
+      "description": "Strengthen your defenses and sustainability",
+      "icon": "shield_ankh",
+      "color": "#228B22",
+      "weight": 20
+    },
+    {
+      "id": "utility_upgrades",
+      "name": "Godly Utility",
+      "description": "Enhance your quality of life and progression",
+      "icon": "divine_scroll",
+      "color": "#FFD700",
+      "weight": 15
+    },
+    {
+      "id": "archetype_specific",
+      "name": "Path Specialization",
+      "description": "Deepen your connection to your chosen divine path",
+      "icon": "godly_symbol",
+      "color": "#9370DB",
+      "weight": 10
+    }
+  ],
+  "globalUpgradePool": [
+    {
+      "id": "divine_damage",
+      "name": "Divine Wrath",
+      "description": "+15% Damage to all attacks",
+      "category": "combat_upgrades",
+      "rarity": "common",
+      "effects": [{"statId": "damage", "value": 15, "isPercentage": true}],
+      "archetypeBonus": {
+        "set_storm": 1.2,
+        "apophis_chaos": 1.15
+      }
+    },
+    {
+      "id": "swift_sands",
+      "name": "Swift as the Desert Wind",
+      "description": "+20% Movement Speed",
+      "category": "utility_upgrades",
+      "rarity": "common",
+      "effects": [{"statId": "movement_speed", "value": 20, "isPercentage": true}],
+      "archetypeBonus": {
+        "set_storm": 1.25,
+        "anubis_judge": 1.1
+      }
+    },
+    {
+      "id": "eternal_vitality",
+      "name": "Eternal Vitality",
+      "description": "+50 Health",
+      "category": "survival_upgrades",
+      "rarity": "common",
+      "effects": [{"statId": "health", "value": 50, "isPercentage": false}],
+      "archetypeBonus": {
+        "ammit_devourer": 1.3,
+        "ra_sun": 1.1
+      }
+    },
+    {
+      "id": "precision_strikes",
+      "name": "Precision of the Falcon",
+      "description": "+12% Critical Chance",
+      "category": "combat_upgrades",
+      "rarity": "uncommon",
+      "effects": [{"statId": "critical_chance", "value": 12, "isPercentage": true}],
+      "archetypeBonus": {
+        "anubis_judge": 1.4,
+        "horus_focused": 1.2
+      }
+    },
+    {
+      "id": "wisdom_amplification",
+      "name": "Wisdom's Amplification",
+      "description": "+1 Projectile Count",
+      "category": "magical_upgrades",
+      "rarity": "uncommon",
+      "effects": [{"statId": "projectile_count", "value": 1, "isPercentage": false}],
+      "archetypeBonus": {
+        "thoth_scholar": 1.5,
+        "ra_sun": 1.2
+      }
+    },
+    {
+      "id": "sustaining_life",
+      "name": "Sustaining Life Force",
+      "description": "+25% Health Regeneration",
+      "category": "survival_upgrades",
+      "rarity": "uncommon",
+      "effects": [{"statId": "health_regen", "value": 25, "isPercentage": true}],
+      "archetypeBonus": {
+        "ammit_devourer": 1.3,
+        "isis_focused": 1.2
+      }
+    },
+    {
+      "id": "divine_fortune",
+      "name": "Divine Fortune",
+      "description": "+20% Loot Multiplier",
+      "category": "utility_upgrades",
+      "rarity": "rare",
+      "effects": [{"statId": "loot_multiplier", "value": 0.2, "isPercentage": true}],
+      "archetypeBonus": {
+        "bastet_focused": 1.4,
+        "thoth_scholar": 1.1
+      }
+    },
+    {
+      "id": "godly_speed",
+      "name": "Godly Combat Speed",
+      "description": "+25% Attack Speed",
+      "category": "combat_upgrades",
+      "rarity": "rare",
+      "effects": [{"statId": "attack_speed", "value": 0.25, "isPercentage": true}],
+      "archetypeBonus": {
+        "set_storm": 1.3,
+        "anubis_judge": 1.2
+      }
+    },
+    {
+      "id": "radiant_power",
+      "name": "Radiant Divine Power",
+      "description": "+25% Area Damage",
+      "category": "magical_upgrades",
+      "rarity": "rare",
+      "effects": [{"statId": "area_damage", "value": 25, "isPercentage": true}],
+      "archetypeBonus": {
+        "ra_sun": 1.4,
+        "apophis_chaos": 1.2
+      }
+    },
+    {
+      "id": "immortal_endurance",
+      "name": "Immortal Endurance",
+      "description": "+100 Health",
+      "category": "survival_upgrades",
+      "rarity": "rare",
+      "effects": [{"statId": "health", "value": 100, "isPercentage": false}],
+      "archetypeBonus": {
+        "ammit_devourer": 1.4,
+        "geb_focused": 1.2
+      }
+    }
+  ],
+  "levelUpEvents": {
+    "levelMilestones": [
+      {
+        "level": 5,
+        "event": "path_commitment",
+        "description": "Choose your primary divine path",
+        "rewards": ["archetype_bonus_1.25x"]
+      },
+      {
+        "level": 10,
+        "event": "divine_blessing",
+        "description": "Receive a blessing from your chosen deity",
+        "rewards": ["random_legendary_upgrade"]
+      },
+      {
+        "level": 25,
+        "event": "godly_ascension",
+        "description": "Ascend to semi-divine status",
+        "rewards": ["ultimate_skill_unlock", "stat_boost_50percent"]
+      },
+      {
+        "level": 50,
+        "event": "pharaoh_hood",
+        "description": "Achieve true pharaoh status",
+        "rewards": ["max_all_upgrades", "god_mode"]
+      }
+    ],
+    "specialEvents": {
+      "perfect_kpm_streak": {
+        "threshold": 30,
+        "reward": "legendary_upgrade",
+        "cooldown": 600
+      },
+      "no_damage_run": {
+        "threshold": 10,
+        "reward": "epic_upgrade",
+        "cooldown": 300
+      },
+      "speed_run": {
+        "threshold": 300,
+        "reward": "rare_upgrade",
+        "cooldown": 1800
+      }
+    }
+  }
+}

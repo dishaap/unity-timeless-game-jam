@@ -1,0 +1,297 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "Canopic Satchel - Auto-collecting artifact system with passive support effects",
+  "canopicSatchel": {
+    "id": "canopic_satchels",
+    "name": "Canopic Satchel",
+    "displayName": "Vessel of the Gods",
+    "description": "Sacred vessel holding the organs of divine artifacts, automatically collecting fallen relics",
+    "capacity": 50,
+    "autoCollectRange": 10,
+    "autoCollectEnabled": true,
+    "visualEffects": {
+      "idle": "golden_aura",
+      "collecting": "divine_light_burst",
+      "full": "overflowing_glow"
+    },
+    "soundEffects": {
+      "collect": "artifact_absorb",
+      "full": "satchel_full_chime",
+      "overflow": "divine_warning"
+    },
+    "lore": "The Canopic Satchel, modeled after the sacred vessels that held the organs of the pharaohs, now serves to contain the divine artifacts that fall from defeated guardians of the underworld."
+  },
+  "artifactTypes": [
+    {
+      "id": "support_artifact",
+      "name": "Support Artifact",
+      "displayName": "Divine Support Relic",
+      "description": "Passive artifacts that enhance abilities and provide support effects",
+      "autoCollect": true,
+      "dropRate": 0.15,
+      "maxPerSatchel": 50,
+      "rarityTiers": ["common", "uncommon", "rare", "epic", "legendary"]
+    },
+    {
+      "id": "stat_artifact",
+      "name": "Stat Artifact",
+      "displayName": "Pharaoh's Blessing",
+      "description": "Pure stat-boosting artifacts from divine favor",
+      "autoCollect": true,
+      "dropRate": 0.10,
+      "maxPerSatchel": 50,
+      "rarityTiers": ["common", "uncommon", "rare", "epic", "legendary"]
+    }
+  ],
+  "artifactTemplates": [
+    {
+      "id": "anubis_scale",
+      "name": "Scale of Anubis",
+      "displayName": "Anubis' Sacred Scale",
+      "description": "The scale used to weigh the hearts of the dead, now granting judgment in combat",
+      "type": "support_artifact",
+      "rarity": "rare",
+      "baseEffects": [
+        {
+          "statId": "critical_chance",
+          "value": 8,
+          "isPercentage": true,
+          "description": "Increases critical hit chance"
+        }
+      ],
+      "affixSlots": 2,
+      "maxAffixes": 2,
+      "visualEffects": ["scale_glow", "judgment_runes"],
+      "lore": "The very scale that determines worthiness in the afterlife now tips the balance in your favor."
+    },
+    {
+      "id": "thoths_quill",
+      "name": "Quill of Thoth",
+      "displayName": "Thoth's Eternal Quill",
+      "description": "The quill that recorded all knowledge, now enhancing magical abilities",
+      "type": "support_artifact",
+      "rarity": "epic",
+      "baseEffects": [
+        {
+          "statId": "projectile_count",
+          "value": 1,
+          "isPercentage": false,
+          "description": "Increases number of projectiles"
+        },
+        {
+          "statId": "experience_multiplier",
+          "value": 0.15,
+          "isPercentage": true,
+          "description": "Increases experience gained"
+        }
+      ],
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "visualEffects": ["quill_glow", "knowledge_runes", "ink_trail"],
+      "lore": "The quill of wisdom multiplies your projectiles, each carrying ancient knowledge."
+    },
+    {
+      "id": "horus_eye",
+      "name": "Eye of Horus",
+      "displayName": "Horus' Vigilant Eye",
+      "description": "The protective eye that wards off evil, enhancing vision and precision",
+      "type": "support_artifact",
+      "rarity": "uncommon",
+      "baseEffects": [
+        {
+          "statId": "critical_multiplier",
+          "value": 0.25,
+          "isPercentage": true,
+          "description": "Increases critical damage"
+        }
+      ],
+      "affixSlots": 2,
+      "maxAffixes": 2,
+      "visualEffects": ["eye_glow", "protection_aura"],
+      "lore": "The eye that sees all now ensures your strikes carry the weight of divine judgment."
+    },
+    {
+      "id": "isis_healing",
+      "name": "Tear of Isis",
+      "displayName": "Isis' Healing Tear",
+      "description": "A tear shed for Osiris, carrying restorative powers",
+      "type": "support_artifact",
+      "rarity": "common",
+      "baseEffects": [
+        {
+          "statId": "health_regen",
+          "value": 2,
+          "isPercentage": false,
+          "description": "Increases health regeneration"
+        }
+      ],
+      "affixSlots": 1,
+      "maxAffixes": 1,
+      "visualEffects": ["tear_glow", "healing_aura"],
+      "lore": "A single tear of the goddess, carrying the power to mend and restore life."
+    },
+    {
+      "id": "set_strength",
+      "name": "Fang of Set",
+      "displayName": "Set's Chaos Fang",
+      "description": "Fang from the god of chaos, granting raw destructive power",
+      "type": "stat_artifact",
+      "rarity": "rare",
+      "baseEffects": [
+        {
+          "statId": "damage",
+          "value": 15,
+          "isPercentage": false,
+          "description": "Increases base damage"
+        },
+        {
+          "statId": "knockback_force",
+          "value": 10,
+          "isPercentage": false,
+          "description": "Increases knockback power"
+        }
+      ],
+      "affixSlots": 2,
+      "maxAffixes": 2,
+      "visualEffects": ["fang_glow", "chaos_energy"],
+      "lore": "A fang from the god of storms and chaos, channeling destructive force through your weapons."
+    },
+    {
+      "id": "bastet_luck",
+      "name": "Claw of Bastet",
+      "displayName": "Bastet's Lucky Claw",
+      "description": "Claw of the cat goddess, bringing fortune and increased loot",
+      "type": "support_artifact",
+      "rarity": "uncommon",
+      "baseEffects": [
+        {
+          "statId": "loot_multiplier",
+          "value": 0.2,
+          "isPercentage": true,
+          "description": "Increases loot drop rates"
+        }
+      ],
+      "affixSlots": 2,
+      "maxAffixes": 2,
+      "visualEffects": ["claw_glow", "luck_sparks"],
+      "lore": "The claw of fortune ensures treasures find their way to worthy adventurers."
+    },
+    {
+      "id": "ra_solar",
+      "name": "Ray of Ra",
+      "displayName": "Ra's Solar Ray",
+      "description": "A fragment of the sun god's eternal light, burning enemies",
+      "type": "support_artifact",
+      "rarity": "epic",
+      "baseEffects": [
+        {
+          "statId": "area_damage",
+          "value": 12,
+          "isPercentage": false,
+          "description": "Increases area damage"
+        },
+        {
+          "statId": "divine_favor",
+          "value": 0.1,
+          "isPercentage": true,
+          "description": "Increases overall power"
+        }
+      ],
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "visualEffects": ["solar_flare", "burning_aura", "light_rays"],
+      "lore": "A ray from the sun itself, carrying the burning justice of Ra to all who oppose you."
+    },
+    {
+      "id": "ammit_hunger",
+      "name": "Tooth of Ammit",
+      "displayName": "Ammit's Devouring Tooth",
+      "description": "Tooth from the devourer of souls, stealing life from enemies",
+      "type": "support_artifact",
+      "rarity": "legendary",
+      "baseEffects": [
+        {
+          "statId": "life_steal",
+          "value": 8,
+          "isPercentage": true,
+          "description": "Converts damage to health"
+        },
+        {
+          "statId": "health",
+          "value": 50,
+          "isPercentage": false,
+          "description": "Increases maximum health"
+        }
+      ],
+      "affixSlots": 4,
+      "maxAffixes": 4,
+      "visualEffects": ["tooth_glow", "blood_aura", "devouring_energy"],
+      "lore": "A tooth from the great devourer, turning the life force of enemies into your own sustenance."
+    },
+    {
+      "id": "khepri_cycle",
+      "name": "Shell of Khepri",
+      "displayName": "Khepri's Scarab Shell",
+      "description": "Shell fragment carrying the power of eternal transformation",
+      "type": "support_artifact",
+      "rarity": "rare",
+      "baseEffects": [
+        {
+          "statId": "movement_speed",
+          "value": 1,
+          "isPercentage": false,
+          "description": "Increases movement speed"
+        }
+      ],
+      "affixSlots": 2,
+      "maxAffixes": 2,
+      "visualEffects": ["scarab_glow", "transformation_sparks"],
+      "lore": "A fragment of the scarab's eternal shell, carrying the momentum of perpetual rebirth."
+    },
+    {
+      "id": "maat_balance",
+      "name": "Feather of Maat",
+      "displayName": "Maat's Balance Feather",
+      "description": "Feather of truth and justice, ensuring perfect balance in combat",
+      "type": "support_artifact",
+      "rarity": "epic",
+      "baseEffects": [
+        {
+          "statId": "critical_chance",
+          "value": 6,
+          "isPercentage": true,
+          "description": "Increases critical chance"
+        },
+        {
+          "statId": "critical_multiplier",
+          "value": 0.3,
+          "isPercentage": true,
+          "description": "Increases critical damage"
+        }
+      ],
+      "affixSlots": 3,
+      "maxAffixes": 3,
+      "visualEffects": ["feather_glow", "balance_runes"],
+      "lore": "The feather that tips the scales of justice, ensuring your strikes carry perfect balance."
+    }
+  ],
+  "autoCollectionRules": {
+    "collectionRange": 10,
+    "collectionSpeed": 0.5,
+    "maxItemsPerSecond": 5,
+    "prioritizeRarity": true,
+    "rarityPriority": ["legendary", "epic", "rare", "uncommon", "common"],
+    "collectionEffects": {
+      "particleEffect": "artifact_absorb",
+      "soundEffect": "divine_chime",
+      "screenFlash": false
+    }
+  },
+  "satchelManagement": {
+    "autoSortByRarity": true,
+    "autoEquipBest": false,
+    "showCollectionNotifications": true,
+    "maxCapacityWarning": 45,
+    "overflowBehavior": "replace_lowest_rarity"
+  }
+}

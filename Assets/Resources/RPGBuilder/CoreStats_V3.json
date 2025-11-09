@@ -1,0 +1,260 @@
+{
+  "version": "V3_Egyptian_ARPG",
+  "description": "Core stats for Egyptian-themed ARPG with time manipulation mechanics",
+  "stats": [
+    {
+      "id": "health",
+      "name": "Health",
+      "displayName": "Life Force",
+      "description": "Maximum life force of the adventurer",
+      "minValue": 0,
+      "maxValue": 10000,
+      "defaultValue": 100,
+      "isPercentage": false,
+      "isVital": true,
+      "color": "#FF4444"
+    },
+    {
+      "id": "health_regen",
+      "name": "HealthRegen",
+      "displayName": "Life Regeneration",
+      "description": "Life force regeneration per second",
+      "minValue": 0,
+      "maxValue": 100,
+      "defaultValue": 1,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#88FF88"
+    },
+    {
+      "id": "movement_speed",
+      "name": "MovementSpeed",
+      "displayName": "Sand Stride Speed",
+      "description": "Movement speed across desert sands",
+      "minValue": 0,
+      "maxValue": 20,
+      "defaultValue": 5,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#FFD700"
+    },
+    {
+      "id": "attack_speed",
+      "name": "AttackSpeed",
+      "displayName": "Combat Tempo",
+      "description": "Speed of weapon attacks and spell casting",
+      "minValue": 0,
+      "maxValue": 5,
+      "defaultValue": 1,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#FF6B35"
+    },
+    {
+      "id": "damage",
+      "name": "Damage",
+      "displayName": "Divine Wrath",
+      "description": "Base physical damage dealt",
+      "minValue": 0,
+      "maxValue": 1000,
+      "defaultValue": 10,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#DC143C"
+    },
+    {
+      "id": "critical_chance",
+      "name": "CriticalChance",
+      "displayName": "Anubis' Judgment",
+      "description": "Chance to deal critical damage",
+      "minValue": 0,
+      "maxValue": 100,
+      "defaultValue": 5,
+      "isPercentage": true,
+      "isVital": false,
+      "color": "#9932CC"
+    },
+    {
+      "id": "critical_multiplier",
+      "name": "CriticalMultiplier",
+      "displayName": "Osiris' Favor",
+      "description": "Multiplier for critical damage",
+      "minValue": 1,
+      "maxValue": 5,
+      "defaultValue": 2,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#FF1493"
+    },
+    {
+      "id": "projectile_speed",
+      "name": "ProjectileSpeed",
+      "displayName": "Horus' Flight",
+      "description": "Speed of projectiles and spells",
+      "minValue": 0,
+      "maxValue": 50,
+      "defaultValue": 10,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#00CED1"
+    },
+    {
+      "id": "projectile_count",
+      "name": "ProjectileCount",
+      "displayName": "Thoth's Multitude",
+      "description": "Number of projectiles fired",
+      "minValue": 1,
+      "maxValue": 10,
+      "defaultValue": 1,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#32CD32"
+    },
+    {
+      "id": "area_damage",
+      "name": "AreaDamage",
+      "displayName": "Ra's Radiance",
+      "description": "Damage dealt in area of effect",
+      "minValue": 0,
+      "maxValue": 1000,
+      "defaultValue": 0,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#FFA500"
+    },
+    {
+      "id": "knockback_force",
+      "name": "KnockbackForce",
+      "displayName": "Set's Fury",
+      "description": "Force of knockback effects",
+      "minValue": 0,
+      "maxValue": 100,
+      "defaultValue": 0,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#8B0000"
+    },
+    {
+      "id": "life_steal",
+      "name": "LifeSteal",
+      "displayName": "Ammit's Hunger",
+      "description": "Percentage of damage converted to health",
+      "minValue": 0,
+      "maxValue": 50,
+      "defaultValue": 0,
+      "isPercentage": true,
+      "isVital": false,
+      "color": "#FF4500"
+    },
+    {
+      "id": "experience_multiplier",
+      "name": "ExperienceMultiplier",
+      "displayName": "Isis' Wisdom",
+      "description": "Multiplier for experience gained",
+      "minValue": 0.1,
+      "maxValue": 5,
+      "defaultValue": 1,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#9370DB"
+    },
+    {
+      "id": "loot_multiplier",
+      "name": "LootMultiplier",
+      "displayName": "Bastet's Fortune",
+      "description": "Multiplier for loot drops",
+      "minValue": 0.1,
+      "maxValue": 5,
+      "defaultValue": 1,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#FFDAB9"
+    },
+    {
+      "id": "time_manipulation",
+      "name": "TimeManipulation",
+      "displayName": "Chronos Control",
+      "description": "Ability to manipulate time flow",
+      "minValue": 0,
+      "maxValue": 1,
+      "defaultValue": 0,
+      "isPercentage": true,
+      "isVital": false,
+      "color": "#4169E1"
+    },
+    {
+      "id": "kills_per_minute",
+      "name": "KillsPerMinute",
+      "displayName": "Divine Slaughter Rate",
+      "description": "Tracking kills per minute for difficulty scaling",
+      "minValue": 0,
+      "maxValue": 100,
+      "defaultValue": 0,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#DC143C",
+      "isTrackingOnly": true
+    },
+    {
+      "id": "ultimate_charge",
+      "name": "UltimateCharge",
+      "displayName": "Godly Essence",
+      "description": "Charge for ultimate abilities",
+      "minValue": 0,
+      "maxValue": 100,
+      "defaultValue": 0,
+      "isPercentage": true,
+      "isVital": false,
+      "color": "#FFD700"
+    },
+    {
+      "id": "divine_favor",
+      "name": "DivineFavor",
+      "displayName": "Pharaoh's Blessing",
+      "description": "General power multiplier from divine favor",
+      "minValue": 0,
+      "maxValue": 2,
+      "defaultValue": 1,
+      "isPercentage": false,
+      "isVital": false,
+      "color": "#FF6347"
+    }
+  ],
+  "statCategories": [
+    {
+      "id": "combat",
+      "name": "Combat Stats",
+      "description": "Direct combat effectiveness",
+      "stats": ["damage", "critical_chance", "critical_multiplier", "attack_speed", "life_steal"],
+      "color": "#DC143C"
+    },
+    {
+      "id": "survival",
+      "name": "Survival Stats",
+      "description": "Defense and sustainability",
+      "stats": ["health", "health_regen", "movement_speed"],
+      "color": "#228B22"
+    },
+    {
+      "id": "magical",
+      "name": "Magical Stats",
+      "description": "Spell and projectile effectiveness",
+      "stats": ["projectile_speed", "projectile_count", "area_damage", "time_manipulation"],
+      "color": "#4169E1"
+    },
+    {
+      "id": "utility",
+      "name": "Utility Stats",
+      "description": "Quality of life and progression",
+      "stats": ["experience_multiplier", "loot_multiplier", "knockback_force"],
+      "color": "#FFD700"
+    },
+    {
+      "id": "tracking",
+      "name": "Tracking Stats",
+      "description": "Internal game mechanics",
+      "stats": ["kills_per_minute", "ultimate_charge"],
+      "color": "#696969"
+    }
+  ]
+}
